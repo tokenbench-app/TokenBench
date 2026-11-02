@@ -1,0 +1,134 @@
+{
+ "chain_id": "nodebb_A",
+ "tasks": [
+  {
+   "k": "01",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "02",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "03",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "04",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [
+    "test/posts.js | Post's socket methods should get post summary",
+    "test/posts.js | Post's socket methods should get post summary by index",
+    "test/posts.js | Post's socket methods should get post timestamp by index",
+    "test/posts.js | Post's Topic Backlinks .syncBacklinks() should not detect backlinks if they are in quotes"
+   ],
+   "n_p2p_derived": 1,
+   "gold_flaky": []
+  },
+  {
+   "k": "05",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [
+    "test/database/keys.js | Test database | Key methods | should return multiple keys and null if key doesn't exist",
+    "test/database/keys.js | Test database | Key methods | should return empty array if keys is empty array or falsy",
+    "test/database/sets.js | Test database | Set methods | setAdd() | should not error with parallel adds",
+    "test/database/list.js | Test database | List methods | getListRange() | should return list elements in reverse order"
+   ],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "06",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [
+    "test/user/reset.js | locks should not allow multiple calls to the reset method at the same time",
+    "test/user.js | User digests should return 0",
+    "test/user.js | User profile methods should properly change username and clean up old sorted sets",
+    "test/user/reset.js | locks should disallow reset request if one was made within the minute",
+    "test/user/reset.js | locks should not allow multiple socket calls to the reset method either",
+    "test/user/reset.js | locks should properly unlock user reset",
+    "test/user.js | User digests should get users with single uid"
+   ],
+   "n_p2p_derived": 5,
+   "gold_flaky": []
+  }
+ ],
+ "gold": {
+  "chain_id": "nodebb_A",
+  "apply": [
+   "clean"
+  ],
+  "base_tree_match": true,
+  "f2p_pass": 17,
+  "f2p_total": 17,
+  "p2p_pass": 857,
+  "p2p_total": 857,
+  "f2p_frac": 1.0,
+  "p2p_frac": 1.0,
+  "tasks_resolved": 6,
+  "n_tasks": 6,
+  "ok": true,
+  "all_pass": true
+ },
+ "base": {
+  "chain_id": "nodebb_A",
+  "apply": [
+   "empty"
+  ],
+  "base_tree_match": true,
+  "f2p_pass": 0,
+  "f2p_total": 17,
+  "p2p_pass": 857,
+  "p2p_total": 857,
+  "f2p_frac": 0.0,
+  "p2p_frac": 1.0,
+  "tasks_resolved": 0,
+  "n_tasks": 6,
+  "ok": false,
+  "all_pass": false
+ },
+ "p2p_superseded": {
+  "04": [
+   "test/posts.js | Post's socket methods should get post summary",
+   "test/posts.js | Post's socket methods should get post summary by index",
+   "test/posts.js | Post's socket methods should get post timestamp by index",
+   "test/posts.js | Post's Topic Backlinks .syncBacklinks() should not detect backlinks if they are in quotes"
+  ],
+  "05": [
+   "test/database/keys.js | Test database | Key methods | should return multiple keys and null if key doesn't exist",
+   "test/database/keys.js | Test database | Key methods | should return empty array if keys is empty array or falsy",
+   "test/database/list.js | Test database | List methods | getListRange() | should return list elements in reverse order",
+   "test/database/sets.js | Test database | Set methods | setAdd() | should not error with parallel adds"
+  ],
+  "06": [
+   "test/user.js | User profile methods should properly change username and clean up old sorted sets",
+   "test/user.js | User digests should return 0",
+   "test/user.js | User digests should get users with single uid",
+   "test/user/reset.js | locks should disallow reset request if one was made within the minute",
+   "test/user/reset.js | locks should not allow multiple calls to the reset method at the same time",
+   "test/user/reset.js | locks should not allow multiple socket calls to the reset method either",
+   "test/user/reset.js | locks should properly unlock user reset"
+  ]
+ }
+}

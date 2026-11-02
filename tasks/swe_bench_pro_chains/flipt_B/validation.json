@@ -1,0 +1,75 @@
+{
+ "chain_id": "flipt_B",
+ "tasks": [
+  {
+   "k": "01",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 22,
+   "gold_flaky": []
+  },
+  {
+   "k": "02",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 51,
+   "gold_flaky": []
+  },
+  {
+   "k": "03",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 1,
+   "gold_flaky": []
+  },
+  {
+   "k": "04",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 21,
+   "gold_flaky": []
+  }
+ ],
+ "gold": {
+  "chain_id": "flipt_B",
+  "apply": [
+   "clean"
+  ],
+  "base_tree_match": true,
+  "f2p_pass": 20,
+  "f2p_total": 20,
+  "p2p_pass": 95,
+  "p2p_total": 95,
+  "f2p_frac": 1.0,
+  "p2p_frac": 1.0,
+  "tasks_resolved": 4,
+  "n_tasks": 4,
+  "ok": true,
+  "all_pass": true
+ },
+ "base": {
+  "chain_id": "flipt_B",
+  "apply": [
+   "empty"
+  ],
+  "base_tree_match": true,
+  "f2p_pass": 0,
+  "f2p_total": 20,
+  "p2p_pass": 0,
+  "p2p_total": 95,
+  "f2p_frac": 0.0,
+  "p2p_frac": 0.0,
+  "tasks_resolved": 0,
+  "n_tasks": 4,
+  "ok": false,
+  "all_pass": false
+ }
+}

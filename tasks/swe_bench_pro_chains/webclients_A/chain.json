@@ -1,0 +1,245 @@
+{
+ "chain_id": "webclients_A",
+ "repo": "protonmail/webclients",
+ "language": "js",
+ "source": "ScaleAI/SWE-bench_Pro V2 (HF default config)",
+ "base_instance": "instance_protonmail__webclients-09fcf0dbdb87fa4f4a27700800ee4a3caed8b413",
+ "base_commit": "41f29d1c8dad68d693d2e3e10e5c65b6fb780142",
+ "base_tree": "1977c09ccf3005025538eebf08247e6637d9c460",
+ "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_protonmail__webclients-09fcf0dbdb87fa4f4a27700800ee4a3caed8b413",
+ "gold_lines": 1103,
+ "n_tasks": 6,
+ "tasks": [
+  {
+   "k": "01",
+   "instance_id": "instance_protonmail__webclients-09fcf0dbdb87fa4f4a27700800ee4a3caed8b413",
+   "base_commit": "41f29d1c8dad68d693d2e3e10e5c65b6fb780142",
+   "base_date": "2022-11-07",
+   "gold_lines": 54,
+   "run_mode": "selected",
+   "selected_tests": [
+    "src/app/helpers/elements.test.ts",
+    "applications/mail/src/app/helpers/elements.test.ts"
+   ],
+   "fail_to_pass": [
+    "src/app/helpers/elements.test.ts | isFromProton should be an element from Proton",
+    "src/app/helpers/elements.test.ts | isFromProton should not be an element from Proton"
+   ],
+   "pass_to_pass": [
+    "src/app/helpers/elements.test.ts | isConversation / isMessage should return conversation when there is no conversationID in message",
+    "src/app/helpers/elements.test.ts | isConversation / isMessage should return message when there is a conversationID in message",
+    "src/app/helpers/elements.test.ts | sort should sort by time",
+    "src/app/helpers/elements.test.ts | sort should sort by time desc",
+    "src/app/helpers/elements.test.ts | sort should fallback on order",
+    "src/app/helpers/elements.test.ts | sort should sort by order reversed for time asc",
+    "src/app/helpers/elements.test.ts | sort should sort by size",
+    "src/app/helpers/elements.test.ts | getCounterMap should use conversation or message count depending the label type",
+    "src/app/helpers/elements.test.ts | getDate should not fail for an undefined element",
+    "src/app/helpers/elements.test.ts | getDate should take the Time property of a message",
+    "src/app/helpers/elements.test.ts | getDate should take the right label ContextTime of a conversation",
+    "src/app/helpers/elements.test.ts | getDate should take the Time property of a conversation",
+    "src/app/helpers/elements.test.ts | getDate should take the label time in priority for a conversation",
+    "src/app/helpers/elements.test.ts | isUnread should not fail for an undefined element",
+    "src/app/helpers/elements.test.ts | isUnread should take the Unread property of a message",
+    "src/app/helpers/elements.test.ts | isUnread should take the right label ContextNumUnread of a conversation",
+    "src/app/helpers/elements.test.ts | isUnread should take the ContextNumUnread property of a conversation",
+    "src/app/helpers/elements.test.ts | isUnread should take the NumUnread property of a conversation",
+    "src/app/helpers/elements.test.ts | isUnread should take the value when all are present for a conversation"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "02",
+   "instance_id": "instance_protonmail__webclients-caf10ba9ab2677761c88522d1ba8ad025779c492",
+   "base_commit": "8ae1b7f17822e5121f7394d03192e283904579ad",
+   "base_date": "2022-11-11",
+   "gold_lines": 541,
+   "run_mode": "selected",
+   "selected_tests": [
+    "packages/shared/test/calendar/recurring.spec.js",
+    "packages/shared/test/calendar/alarms.spec.ts",
+    "src/app/helpers/calendar/invite.test.ts",
+    "packages/shared/test/calendar/rrule/rruleEqual.spec.js",
+    "packages/shared/test/calendar/decrypt.spec.ts",
+    "packages/shared/test/calendar/rrule/rruleWkst.spec.js",
+    "packages/shared/test/calendar/rrule/rruleUntil.spec.js",
+    "packages/shared/test/calendar/rrule/rrule.spec.js",
+    "packages/shared/test/calendar/rrule/rruleSubset.spec.js",
+    "packages/shared/test/calendar/integration/invite.spec.js",
+    "packages/shared/test/calendar/getFrequencyString.spec.js",
+    "applications/mail/src/app/helpers/calendar/invite.test.ts"
+   ],
+   "fail_to_pass": [
+    "src/app/helpers/calendar/invite.test.ts | should accept events with daily recurring rules valid for invitations",
+    "src/app/helpers/calendar/invite.test.ts | should refuse events with invalid daily recurring rules",
+    "src/app/helpers/calendar/invite.test.ts | should accept events with yearly recurring rules valid for invitations",
+    "src/app/helpers/calendar/invite.test.ts | should not import alarms for invites and keep recurrence id",
+    "src/app/helpers/calendar/invite.test.ts | should refuse invitations with inconsistent custom yearly recurrence rules",
+    "src/app/helpers/calendar/invite.test.ts | should refuse invitations with non-yearly recurrence rules that contain a byyearday"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [
+    "src/app/helpers/calendar/invite.test.ts | should generate a DTSTAMP from the message if no DTSTAMP was present",
+    "src/app/helpers/calendar/invite.test.ts | should generate a hash UID for invitations with no method and drop alarms and recurrence id",
+    "src/app/helpers/calendar/invite.test.ts | should not throw when receiving a VTIMEZONE without TZID",
+    "src/app/helpers/calendar/invite.test.ts | should not throw without version, untrimmed calscale and duration",
+    "src/app/helpers/calendar/invite.test.ts | should reformat break lines properly",
+    "src/app/helpers/calendar/invite.test.ts | should refuse events with invalid yearly recurring rules",
+    "src/app/helpers/calendar/invite.test.ts | should throw for unknown calscales",
+    "src/app/helpers/calendar/invite.test.ts | when there is a single vtimezone and no x-wr-timezone",
+    "src/app/helpers/calendar/invite.test.ts | when there is a single vtimezone and x-wr-timezone is not supported",
+    "src/app/helpers/calendar/invite.test.ts | when there is both x-wr-timezone and single vtimezone (use x-wr-timezone)",
+    "src/app/helpers/calendar/invite.test.ts | when there is no vtimezone nor x-wr-timezone (reject unsupported event)",
+    "src/app/helpers/calendar/invite.test.ts | when there is no vtimezone nor x-wr-timezone (use primary time zone)",
+    "src/app/helpers/calendar/invite.test.ts | when there is no x-wr-timezone and more than one vtimezone (reject unsupported event)",
+    "src/app/helpers/calendar/invite.test.ts | when there is no x-wr-timezone and more than one vtimezone (use primary time zone)"
+   ],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "03",
+   "instance_id": "instance_protonmail__webclients-6f8916fbadf1d1f4a26640f53b5cf7f55e8bedb7",
+   "base_commit": "2099c5070b15ba5984cd386f63811e4321a27611",
+   "base_date": "2022-11-15",
+   "gold_lines": 26,
+   "run_mode": "selected",
+   "selected_tests": [
+    "applications/drive/src/app/store/_shares/useDefaultShare.test.tsx",
+    "src/app/store/_shares/useDefaultShare.test.ts"
+   ],
+   "fail_to_pass": [
+    "src/app/store/_shares/useDefaultShare.test.tsx | useDefaultShare says share is available by default",
+    "src/app/store/_shares/useDefaultShare.test.tsx | useDefaultShare says share is not available if locked",
+    "src/app/store/_shares/useDefaultShare.test.tsx | useDefaultShare says share is not available if soft deleted"
+   ],
+   "pass_to_pass": [
+    "src/app/store/_shares/useDefaultShare.test.tsx | useDefaultShare creates a volume if existing shares are locked/soft deleted",
+    "src/app/store/_shares/useDefaultShare.test.tsx | useDefaultShare creates a volume if no shares exist",
+    "src/app/store/_shares/useDefaultShare.test.tsx | useDefaultShare creates a volume if default share doesn't exist"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "04",
+   "instance_id": "instance_protonmail__webclients-c5a2089ca2bfe9aa1d85a664b8ad87ef843a1c9c",
+   "base_commit": "83c2b47478a5224db61c6557ad326c2bbda18645",
+   "base_date": "2022-11-16",
+   "gold_lines": 33,
+   "run_mode": "selected",
+   "selected_tests": [
+    "applications/drive/src/app/store/_links/useLink.test.ts",
+    "src/app/store/_links/useLink.test.ts"
+   ],
+   "fail_to_pass": [
+    "src/app/store/_links/useLink.test.ts | useLink skips failing fetch if already attempted before",
+    "src/app/store/_links/useLink.test.ts | useLink skips load of already cached thumbnail",
+    "src/app/store/_links/useLink.test.ts | useLink loads link thumbnail using cached link thumbnail info",
+    "src/app/store/_links/useLink.test.ts | useLink loads link thumbnail with expired cached link thumbnail info",
+    "src/app/store/_links/useLink.test.ts | useLink loads link thumbnail with its url on API",
+    "src/app/store/_links/useLink.test.ts | useLink decrypts badly signed thumbnail block"
+   ],
+   "pass_to_pass": [
+    "src/app/store/_links/useLink.test.ts | useLink returns decrypted version from the cache",
+    "src/app/store/_links/useLink.test.ts | useLink decrypts when missing decrypted version in the cache",
+    "src/app/store/_links/useLink.test.ts | useLink decrypts link with parent link",
+    "src/app/store/_links/useLink.test.ts | useLink fetches link from API and decrypts when missing in the cache",
+    "src/app/store/_links/useLink.test.ts | decrypts link meta data with signature issues decrypts badly signed passphrase",
+    "src/app/store/_links/useLink.test.ts | decrypts link meta data with signature issues decrypts badly signed hash",
+    "src/app/store/_links/useLink.test.ts | decrypts link meta data with signature issues decrypts badly signed name"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "05",
+   "instance_id": "instance_protonmail__webclients-08bb09914d0d37b0cd6376d4cab5b77728a43e7b",
+   "base_commit": "cc7976723b05683d80720fc9a352445e5dbb4c85",
+   "base_date": "2022-11-23",
+   "gold_lines": 321,
+   "run_mode": "selected",
+   "selected_tests": [
+    "packages/components/components/v2/input/TotpInput.test.tsx",
+    "components/v2/input/TotpInput.test.ts"
+   ],
+   "fail_to_pass": [
+    "components/v2/input/TotpInput.test.tsx | should display 6 inputs with a totp code",
+    "components/v2/input/TotpInput.test.tsx | should display 4 inputs with a partial totp code with invalid values",
+    "components/v2/input/TotpInput.test.tsx | should display 4 inputs with a partial totp code",
+    "components/v2/input/TotpInput.test.tsx | should display 3 inputs with partial alphabet value",
+    "components/v2/input/TotpInput.test.tsx | should not move focus when entering an invalid value",
+    "components/v2/input/TotpInput.test.tsx | should move focus to the next input when entering a value in the 1st input",
+    "components/v2/input/TotpInput.test.tsx | should move focus to the next input when entering a value in the 2nd input",
+    "components/v2/input/TotpInput.test.tsx | should move focus to the previous input when removing a value",
+    "components/v2/input/TotpInput.test.tsx | should remove the previous value when hitting backspace on left-most selection",
+    "components/v2/input/TotpInput.test.tsx | should go to the next input when entering the same value",
+    "components/v2/input/TotpInput.test.tsx | should move focus when pasting",
+    "components/v2/input/TotpInput.test.tsx | should accept all values when pasting or changing multiple values"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "06",
+   "instance_id": "instance_protonmail__webclients-51742625834d3bd0d10fe0c7e76b8739a59c6b9f",
+   "base_commit": "8472bc64099be00753167dbb516a1187e0ce9b69",
+   "base_date": "2022-11-24",
+   "gold_lines": 128,
+   "run_mode": "selected",
+   "selected_tests": [
+    "packages/components/helpers/url.test.ts",
+    "helpers/url.test.ts"
+   ],
+   "fail_to_pass": [
+    "helpers/url.test.ts | should return the correct hostname",
+    "helpers/url.test.ts | should return the correct hostname with www",
+    "helpers/url.test.ts | should return the correct hostname with www and subdomain",
+    "helpers/url.test.ts | should return the correct hostname with subdomain",
+    "helpers/url.test.ts | should encode the url with punycode",
+    "helpers/url.test.ts | should encode url with punycode and keep pathname, query parameters and fragment",
+    "helpers/url.test.ts | should not encode url already punycode",
+    "helpers/url.test.ts | should not encode url with no punycode"
+   ],
+   "pass_to_pass": [
+    "helpers/url.test.ts | should detect that same hostname is a subDomain",
+    "helpers/url.test.ts | should detect that domain is a subDomain",
+    "helpers/url.test.ts | should detect that domain is not a subDomain",
+    "helpers/url.test.ts | should give the correct hostname",
+    "helpers/url.test.ts | should detect that the url is a mailto link",
+    "helpers/url.test.ts | should detect that the url is not a mailto link",
+    "helpers/url.test.ts | should detect that the url is not external",
+    "helpers/url.test.ts | should detect that the url is external",
+    "helpers/url.test.ts | should detect that the mailto link is not external",
+    "helpers/url.test.ts | should detect that the url is proton internal",
+    "helpers/url.test.ts | should detect that the url is not proton internal"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  }
+ ],
+ "success_rule": "ok = f2p_frac >= 0.9 and p2p_frac >= 0.9 (f2p/p2p pooled over all tasks; p2p = dataset p2p + derived p2p)",
+ "license_note": "This file holds test identifiers and metadata only (instance ids, base commits, docker image, fail-to-pass and pass-to-pass test names) that identify SWE-bench Pro rows for protonmail/webclients. It contains no issue text and no patches. It derives from SWE-bench Pro and the upstream repository; upstream terms apply and this repository's MIT and CC BY 4.0 licences do not cover it. See THIRD_PARTY_NOTICES.md.",
+ "dep_changes": {},
+ "calibration_runs": [],
+ "published_success_rule": "A chain run counts as passed in the published results only if every fail-to-pass and every pass-to-pass test of every task in the chain passes (all_pass in grade.py). The looser 'success_rule' above is a secondary flag that the published results do not use."
+}

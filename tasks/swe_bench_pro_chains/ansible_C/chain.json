@@ -1,0 +1,282 @@
+{
+ "chain_id": "ansible_C",
+ "repo": "ansible/ansible",
+ "language": "python",
+ "source": "ScaleAI/SWE-bench_Pro V2 (HF default config)",
+ "base_instance": "instance_ansible__ansible-e22e103cdf8edc56ff7d9b848a58f94f1471a263-v1055803c3a812189a1133297f7f5468579283f86",
+ "base_commit": "a77dbf08663e002198d0fa2af502d5cde8009454",
+ "base_tree": "4907ee301bb2614a2f52f84caf8a26d7b90f8ca6",
+ "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_ansible__ansible-e22e103cdf8edc56ff7d9b848a58f94f1471a263-v1055803c3a812189a1133297f7f5468579283f86",
+ "gold_lines": 2384,
+ "n_tasks": 6,
+ "tasks": [
+  {
+   "k": "01",
+   "instance_id": "instance_ansible__ansible-e22e103cdf8edc56ff7d9b848a58f94f1471a263-v1055803c3a812189a1133297f7f5468579283f86",
+   "base_commit": "a77dbf08663e002198d0fa2af502d5cde8009454",
+   "base_date": "2020-07-14",
+   "gold_lines": 30,
+   "run_mode": "selected",
+   "selected_tests": [
+    "test/units/plugins/connection/test_winrm.py"
+   ],
+   "fail_to_pass": [
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_success_subprocess[options3-expected3]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_success_subprocess[options4-expected4]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_success_pexpect[options4-expected4]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_success_pexpect[options3-expected3]"
+   ],
+   "pass_to_pass": [
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options6-direct6-expected6-True]",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options11-direct11-expected11-False]",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options3-direct3-expected3-False]",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options0-direct0-expected0-False]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_success_pexpect[options1-expected1]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_with_missing_executable_pexpect",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options10-direct10-expected10-False]",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options9-direct9-expected9-False]",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options12-direct12-expected12-False]",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options4-direct4-expected4-True]",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options5-direct5-expected5-True]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_success_pexpect[options2-expected2]",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options7-direct7-expected7-False]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_success_subprocess[options2-expected2]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_error_subprocess",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options13-direct13-expected13-False]",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options8-direct8-expected8-False]",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options1-direct1-expected1-False]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_success_pexpect[options0-expected0]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_success_subprocess[options0-expected0]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_error_pass_in_output_subprocess",
+    "test/units/plugins/connection/test_winrm.py::TestConnectionWinRM::test_set_options[options2-direct2-expected2-True]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_with_missing_executable_subprocess",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_error_pexpect",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_success_subprocess[options1-expected1]",
+    "test/units/plugins/connection/test_winrm.py::TestWinRMKerbAuth::test_kinit_error_pass_in_output_pexpect"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "02",
+   "instance_id": "instance_ansible__ansible-c616e54a6e23fa5616a1d56d243f69576164ef9b-v1055803c3a812189a1133297f7f5468579283f86",
+   "base_commit": "b479adddce8fe46a2df5469f130cf7b6ad70fdc4",
+   "base_date": "2020-07-16",
+   "gold_lines": 2028,
+   "run_mode": "selected",
+   "selected_tests": [
+    "test/integration/targets/collections/collections/ansible_collections/testns/content_adj/plugins/module_utils/sub1/__init__.py",
+    "test/units/executor/module_common/test_recursive_finder.py",
+    "test/integration/targets/collections/collections/ansible_collections/testns/content_adj/plugins/module_utils/__init__.py",
+    "test/integration/targets/collections/collection_root_user/ansible_collections/testns/othercoll/plugins/module_utils/formerly_testcoll_pkg/__init__.py",
+    "test/integration/targets/collections/collection_root_user/ansible_collections/testns/othercoll/plugins/module_utils/formerly_testcoll_pkg/submod.py",
+    "test/integration/targets/collections/collection_root_user/ansible_collections/testns/testcoll/plugins/module_utils/subpkg_with_init/__init__.py",
+    "test/integration/targets/collections/collection_root_user/ansible_collections/testns/testcoll/plugins/modules/uses_mu_missing_redirect_module.py",
+    "test/integration/targets/collections/collection_root_user/ansible_collections/testns/testcoll/plugins/modules/uses_mu_missing.py",
+    "test/integration/targets/collections/collection_root_user/ansible_collections/testns/testcoll/plugins/module_utils/nested_same/nested_same/__init__.py",
+    "test/integration/targets/collections/collection_root_user/ansible_collections/testns/testcoll/plugins/module_utils/nested_same/__init__.py",
+    "test/integration/targets/collections/collection_root_user/ansible_collections/testns/testcoll/plugins/module_utils/subpkg_with_init/mod_in_subpkg_with_init.py",
+    "test/integration/targets/collections/collection_root_user/ansible_collections/testns/testcoll/plugins/modules/uses_leaf_mu_module_import_from.py",
+    "test/integration/targets/collections/collection_root_user/ansible_collections/testns/testcoll/plugins/modules/uses_collection_redirected_mu.py",
+    "test/integration/targets/collections/collection_root_user/ansible_collections/testns/testcoll/plugins/module_utils/subpkg/__init__.py",
+    "test/integration/targets/collections/collection_root_user/ansible_collections/testns/testcoll/plugins/modules/uses_mu_missing_redirect_collection.py"
+   ],
+   "fail_to_pass": [
+    "test/units/executor/module_common/test_recursive_finder.py::TestRecursiveFinder::test_module_utils_with_identation_error",
+    "test/units/executor/module_common/test_recursive_finder.py::TestRecursiveFinder::test_module_utils_with_syntax_error",
+    "test/units/executor/module_common/test_recursive_finder.py::TestRecursiveFinder::test_from_import_six",
+    "test/units/executor/module_common/test_recursive_finder.py::TestRecursiveFinder::test_import_six",
+    "test/units/executor/module_common/test_recursive_finder.py::TestRecursiveFinder::test_import_six_from_many_submodules",
+    "test/units/executor/module_common/test_recursive_finder.py::TestRecursiveFinder::test_no_module_utils"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "03",
+   "instance_id": "instance_ansible__ansible-bf98f031f3f5af31a2d78dc2f0a58fe92ebae0bb-v1055803c3a812189a1133297f7f5468579283f86",
+   "base_commit": "17332532973343248297e3d3c746738d1f3b2f56",
+   "base_date": "2020-07-22",
+   "gold_lines": 108,
+   "run_mode": "selected",
+   "selected_tests": [
+    "test/units/module_utils/basic/test_sanitize_keys.py",
+    "test/units/module_utils/basic/test_no_log.py"
+   ],
+   "fail_to_pass": [
+    "test/units/module_utils/basic/test_sanitize_keys.py::test_sanitize_keys_non_dict_types",
+    "test/units/module_utils/basic/test_sanitize_keys.py::test_sanitize_keys_with_ignores",
+    "test/units/module_utils/basic/test_sanitize_keys.py::test_sanitize_keys_dict",
+    "test/units/module_utils/basic/test_no_log.py::TestRemoveValues::test_strings_to_remove"
+   ],
+   "pass_to_pass": [
+    "test/units/module_utils/basic/test_no_log.py::TestReturnValues::test_unknown_type",
+    "test/units/module_utils/basic/test_no_log.py::TestRemoveValues::test_no_removal",
+    "test/units/module_utils/basic/test_no_log.py::TestReturnValues::test_return_datastructure_name",
+    "test/units/module_utils/basic/test_no_log.py::TestRemoveValues::test_unknown_type",
+    "test/units/module_utils/basic/test_no_log.py::TestRemoveValues::test_hit_recursion_limit"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "04",
+   "instance_id": "instance_ansible__ansible-5260527c4a71bfed99d803e687dd19619423b134-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5",
+   "base_commit": "bf98f031f3f5af31a2d78dc2f0a58fe92ebae0bb",
+   "base_date": "2020-07-22",
+   "gold_lines": 105,
+   "run_mode": "selected",
+   "selected_tests": [
+    "test/units/module_utils/basic/test_atomic_move.py"
+   ],
+   "fail_to_pass": [
+    "test/units/module_utils/basic/test_atomic_move.py::test_existing_file[stdin1-False]",
+    "test/units/module_utils/basic/test_atomic_move.py::test_existing_file[stdin0-True]",
+    "test/units/module_utils/basic/test_atomic_move.py::test_no_tty_fallback[stdin0]"
+   ],
+   "pass_to_pass": [
+    "test/units/module_utils/basic/test_atomic_move.py::test_new_file[stdin1-False]",
+    "test/units/module_utils/basic/test_atomic_move.py::test_existing_file_stat_failure[stdin0]",
+    "test/units/module_utils/basic/test_atomic_move.py::test_rename_perms_fail_temp_succeeds[stdin0-True]",
+    "test/units/module_utils/basic/test_atomic_move.py::test_new_file[stdin0-True]",
+    "test/units/module_utils/basic/test_atomic_move.py::test_rename_perms_fail_temp_succeeds[stdin1-False]",
+    "test/units/module_utils/basic/test_atomic_move.py::test_existing_file_stat_perms_failure[stdin0]",
+    "test/units/module_utils/basic/test_atomic_move.py::test_rename_failure[stdin0]",
+    "test/units/module_utils/basic/test_atomic_move.py::test_rename_perms_fail_temp_creation_fails[stdin0]"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "05",
+   "instance_id": "instance_ansible__ansible-fb144c44144f8bd3542e71f5db62b6d322c7bd85-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5",
+   "base_commit": "662d34b9a7a1b3ab1d4847eeaef201a005826aef",
+   "base_date": "2020-08-05",
+   "gold_lines": 67,
+   "run_mode": "selected",
+   "selected_tests": [
+    "test/units/cli/test_doc.py"
+   ],
+   "fail_to_pass": [
+    "test/units/cli/test_doc.py::test_ttyify[HORIZONTALLINE-\\n-------------\\n]",
+    "test/units/cli/test_doc.py::test_ttyify[The",
+    "test/units/cli/test_doc.py::test_ttyify[IBM(International",
+    "test/units/cli/test_doc.py::test_ttyify[R(the",
+    "test/units/cli/test_doc.py::test_ttyify[L(the"
+   ],
+   "pass_to_pass": [
+    "test/units/cli/test_doc.py::test_ttyify[C(/usr/bin/file)-`/usr/bin/file']",
+    "test/units/cli/test_doc.py::test_ttyify[no-op",
+    "test/units/cli/test_doc.py::test_ttyify[I(italic)-`italic']",
+    "test/units/cli/test_doc.py::test_ttyify[U(https:/docs.ansible.com)-https:/docs.ansible.com]",
+    "test/units/cli/test_doc.py::test_ttyify[no-op-no-op]",
+    "test/units/cli/test_doc.py::test_ttyify[B(bold)-*bold*]",
+    "test/units/cli/test_doc.py::test_ttyify[M(ansible.builtin.module)-[ansible.builtin.module]]"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "06",
+   "instance_id": "instance_ansible__ansible-3db08adbb1cc6aa9941be5e0fc810132c6e1fa4b-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5",
+   "base_commit": "709484969c8a4ffd74b839a673431a8c5caa6457",
+   "base_date": "2020-10-02",
+   "gold_lines": 46,
+   "run_mode": "selected",
+   "selected_tests": [
+    "test/units/plugins/filter/test_mathstuff.py"
+   ],
+   "fail_to_pass": [
+    "test/units/plugins/filter/test_mathstuff.py::TestMax::test_max",
+    "test/units/plugins/filter/test_mathstuff.py::TestMin::test_min"
+   ],
+   "pass_to_pass": [
+    "test/units/plugins/filter/test_mathstuff.py::TestUnique::test_unhashable[data0-expected0]",
+    "test/units/plugins/filter/test_mathstuff.py::TestUnique::test_hashable[data0-expected0]",
+    "test/units/plugins/filter/test_mathstuff.py::TestUnique::test_hashable[data3-expected3]",
+    "test/units/plugins/filter/test_mathstuff.py::TestIntersect::test_unhashable[dataset10-dataset20-expected0]",
+    "test/units/plugins/filter/test_mathstuff.py::TestUnique::test_unhashable[data2-expected2]",
+    "test/units/plugins/filter/test_mathstuff.py::TestDifference::test_unhashable[dataset11-dataset21-expected1]",
+    "test/units/plugins/filter/test_mathstuff.py::TestIntersect::test_hashable[dataset10-dataset20-expected0]",
+    "test/units/plugins/filter/test_mathstuff.py::TestPower::test_power_non_number",
+    "test/units/plugins/filter/test_mathstuff.py::TestLogarithm::test_log_two",
+    "test/units/plugins/filter/test_mathstuff.py::TestDifference::test_unhashable[dataset10-dataset20-expected0]",
+    "test/units/plugins/filter/test_mathstuff.py::TestIntersect::test_unhashable[dataset12-dataset22-expected2]",
+    "test/units/plugins/filter/test_mathstuff.py::TestRekeyOnMember::test_fail_rekey_on_member[AnsibleFilterError-list_original2-proto-Key",
+    "test/units/plugins/filter/test_mathstuff.py::TestRekeyOnMember::test_fail_rekey_on_member[AnsibleFilterError-list_original0-invalid_key-Key",
+    "test/units/plugins/filter/test_mathstuff.py::TestIntersect::test_unhashable[dataset11-dataset21-expected1]",
+    "test/units/plugins/filter/test_mathstuff.py::TestDifference::test_unhashable[dataset12-dataset22-expected2]",
+    "test/units/plugins/filter/test_mathstuff.py::TestUnique::test_unhashable[data1-expected1]",
+    "test/units/plugins/filter/test_mathstuff.py::TestIntersect::test_hashable[dataset12-dataset22-expected2]",
+    "test/units/plugins/filter/test_mathstuff.py::TestRekeyOnMember::test_fail_rekey_on_member[AnsibleFilterTypeError-list_original5-proto-List",
+    "test/units/plugins/filter/test_mathstuff.py::TestSymmetricDifference::test_hashable[dataset12-dataset22-expected2]",
+    "test/units/plugins/filter/test_mathstuff.py::TestSymmetricDifference::test_hashable[dataset10-dataset20-expected0]",
+    "test/units/plugins/filter/test_mathstuff.py::TestInversePower::test_square_root",
+    "test/units/plugins/filter/test_mathstuff.py::TestIntersect::test_hashable[dataset11-dataset21-expected1]",
+    "test/units/plugins/filter/test_mathstuff.py::TestRekeyOnMember::test_fail_rekey_on_member[AnsibleFilterTypeError-123-proto-Type",
+    "test/units/plugins/filter/test_mathstuff.py::TestRekeyOnMember::test_rekey_on_member_success[list_original1-proto-expected1]",
+    "test/units/plugins/filter/test_mathstuff.py::TestSymmetricDifference::test_unhashable[dataset10-dataset20-expected0]",
+    "test/units/plugins/filter/test_mathstuff.py::TestPower::test_power_cubed",
+    "test/units/plugins/filter/test_mathstuff.py::TestUnique::test_hashable[data2-expected2]",
+    "test/units/plugins/filter/test_mathstuff.py::TestRekeyOnMember::test_rekey_on_member_success[list_original0-proto-expected0]",
+    "test/units/plugins/filter/test_mathstuff.py::TestPower::test_power_squared",
+    "test/units/plugins/filter/test_mathstuff.py::TestLogarithm::test_log_non_number",
+    "test/units/plugins/filter/test_mathstuff.py::TestSymmetricDifference::test_unhashable[dataset11-dataset21-expected1]",
+    "test/units/plugins/filter/test_mathstuff.py::TestSymmetricDifference::test_hashable[dataset11-dataset21-expected1]",
+    "test/units/plugins/filter/test_mathstuff.py::TestRekeyOnMember::test_duplicate_strategy_overwrite",
+    "test/units/plugins/filter/test_mathstuff.py::TestDifference::test_hashable[dataset10-dataset20-expected0]",
+    "test/units/plugins/filter/test_mathstuff.py::TestUnique::test_hashable[data1-expected1]",
+    "test/units/plugins/filter/test_mathstuff.py::TestInversePower::test_cube_root",
+    "test/units/plugins/filter/test_mathstuff.py::TestSymmetricDifference::test_unhashable[dataset12-dataset22-expected2]",
+    "test/units/plugins/filter/test_mathstuff.py::TestLogarithm::test_log_natural",
+    "test/units/plugins/filter/test_mathstuff.py::TestRekeyOnMember::test_fail_rekey_on_member[AnsibleFilterTypeError-string-proto-Type",
+    "test/units/plugins/filter/test_mathstuff.py::TestLogarithm::test_log_ten",
+    "test/units/plugins/filter/test_mathstuff.py::TestDifference::test_hashable[dataset12-dataset22-expected2]",
+    "test/units/plugins/filter/test_mathstuff.py::TestRekeyOnMember::test_fail_rekey_on_member[AnsibleFilterTypeError-list_original3-proto-List",
+    "test/units/plugins/filter/test_mathstuff.py::TestRekeyOnMember::test_fail_rekey_on_member[AnsibleFilterError-list_original1-invalid_key-Key",
+    "test/units/plugins/filter/test_mathstuff.py::TestDifference::test_hashable[dataset11-dataset21-expected1]",
+    "test/units/plugins/filter/test_mathstuff.py::TestRekeyOnMember::test_fail_rekey_on_member[AnsibleFilterTypeError-list_original4-proto-List",
+    "test/units/plugins/filter/test_mathstuff.py::TestUnique::test_unhashable[data3-expected3]",
+    "test/units/plugins/filter/test_mathstuff.py::TestInversePower::test_root_non_number"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  }
+ ],
+ "success_rule": "ok = f2p_frac >= 0.9 and p2p_frac >= 0.9 (f2p/p2p pooled over all tasks; p2p = dataset p2p + derived p2p)",
+ "license_note": "This file holds test identifiers and metadata only (instance ids, base commits, docker image, fail-to-pass and pass-to-pass test names) that identify SWE-bench Pro rows for ansible/ansible. It contains no issue text and no patches. It derives from SWE-bench Pro and the upstream repository; upstream terms apply and this repository's MIT and CC BY 4.0 licences do not cover it. See THIRD_PARTY_NOTICES.md.",
+ "dep_changes": {},
+ "calibration_runs": [
+  {
+   "label": "r1",
+   "seconds": 409,
+   "cost_usd": 1.8308019999999998,
+   "num_turns": 72,
+   "f2p": "24/24",
+   "p2p": "93/93",
+   "tasks_resolved": "6/6",
+   "ok": true,
+   "all_pass": true
+  }
+ ],
+ "published_success_rule": "A chain run counts as passed in the published results only if every fail-to-pass and every pass-to-pass test of every task in the chain passes (all_pass in grade.py). The looser 'success_rule' above is a secondary flag that the published results do not use."
+}

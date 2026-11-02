@@ -1,0 +1,1 @@
+test/integration/targets/config/lookup_plugins/types.py,test/units/config/test_manager.py

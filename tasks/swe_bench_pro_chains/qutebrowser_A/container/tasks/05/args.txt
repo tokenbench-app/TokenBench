@@ -1,0 +1,1 @@
+tests/unit/browser/test_qutescheme.py,tests/unit/config/test_config.py,tests/unit/config/test_configcommands.py

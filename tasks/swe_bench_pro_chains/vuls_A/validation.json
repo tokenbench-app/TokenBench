@@ -1,0 +1,122 @@
+{
+ "chain_id": "vuls_A",
+ "tasks": [
+  {
+   "k": "01",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 119,
+   "gold_flaky": []
+  },
+  {
+   "k": "02",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "03",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 1,
+   "gold_flaky": []
+  },
+  {
+   "k": "04",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 225,
+   "gold_flaky": []
+  },
+  {
+   "k": "05",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 1,
+   "gold_flaky": []
+  },
+  {
+   "k": "06",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 119,
+   "gold_flaky": []
+  },
+  {
+   "k": "07",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [
+    "Test_getAmazonLinuxVersion/2022",
+    "Test_getAmazonLinuxVersion/2027",
+    "Test_getAmazonLinuxVersion/2017.09",
+    "Test_getAmazonLinuxVersion/2018.03",
+    "Test_getAmazonLinuxVersion/2025",
+    "Test_getAmazonLinuxVersion/1",
+    "Test_getAmazonLinuxVersion/2029",
+    "Test_getAmazonLinuxVersion/2023",
+    "Test_getAmazonLinuxVersion/2031",
+    "Test_getAmazonLinuxVersion/2"
+   ],
+   "n_p2p_derived": 102,
+   "gold_flaky": []
+  },
+  {
+   "k": "08",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 7,
+   "gold_flaky": []
+  }
+ ],
+ "gold": {
+  "chain_id": "vuls_A",
+  "apply": [
+   "clean"
+  ],
+  "base_tree_match": true,
+  "f2p_pass": 38,
+  "f2p_total": 38,
+  "p2p_pass": 606,
+  "p2p_total": 606,
+  "f2p_frac": 1.0,
+  "p2p_frac": 1.0,
+  "tasks_resolved": 8,
+  "n_tasks": 8,
+  "ok": true,
+  "all_pass": true
+ },
+ "base": {
+  "chain_id": "vuls_A",
+  "apply": [
+   "empty"
+  ],
+  "base_tree_match": true,
+  "f2p_pass": 0,
+  "f2p_total": 38,
+  "p2p_pass": 29,
+  "p2p_total": 606,
+  "f2p_frac": 0.0,
+  "p2p_frac": 0.0479,
+  "tasks_resolved": 0,
+  "n_tasks": 8,
+  "ok": false,
+  "all_pass": false
+ }
+}

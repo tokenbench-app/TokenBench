@@ -1,0 +1,224 @@
+{
+ "chain_id": "ansible_B",
+ "repo": "ansible/ansible",
+ "language": "python",
+ "source": "ScaleAI/SWE-bench_Pro V2 (HF default config)",
+ "base_instance": "instance_ansible__ansible-29aea9ff3466e4cd2ed00524b9e56738d568ce8b-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5",
+ "base_commit": "270f109bb3af5c2498725b384f77ddc26da2fb73",
+ "base_tree": "2508d00a419f60ef296e4d82e6345c1eaa9f3e28",
+ "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_ansible__ansible-29aea9ff3466e4cd2ed00524b9e56738d568ce8b-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5",
+ "gold_lines": 271,
+ "n_tasks": 5,
+ "tasks": [
+  {
+   "k": "01",
+   "instance_id": "instance_ansible__ansible-29aea9ff3466e4cd2ed00524b9e56738d568ce8b-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5",
+   "base_commit": "270f109bb3af5c2498725b384f77ddc26da2fb73",
+   "base_date": "2021-04-13",
+   "gold_lines": 61,
+   "run_mode": "selected",
+   "selected_tests": [
+    "test/units/plugins/inventory/test_constructed.py"
+   ],
+   "fail_to_pass": [
+    "test/units/plugins/inventory/test_constructed.py::test_keyed_group_str_with_default_value",
+    "test/units/plugins/inventory/test_constructed.py::test_keyed_group_dict_with_default_value",
+    "test/units/plugins/inventory/test_constructed.py::test_keyed_group_with_trailing_separator",
+    "test/units/plugins/inventory/test_constructed.py::test_keyed_group_list_with_default_value"
+   ],
+   "pass_to_pass": [
+    "test/units/plugins/inventory/test_constructed.py::test_keyed_group_str_no_default_value",
+    "test/units/plugins/inventory/test_constructed.py::test_group_by_value_only",
+    "test/units/plugins/inventory/test_constructed.py::test_keyed_parent_groups",
+    "test/units/plugins/inventory/test_constructed.py::test_parent_group_templating_error",
+    "test/units/plugins/inventory/test_constructed.py::test_keyed_group_exclusive_argument",
+    "test/units/plugins/inventory/test_constructed.py::test_keyed_group_host_confusion",
+    "test/units/plugins/inventory/test_constructed.py::test_parent_group_templating",
+    "test/units/plugins/inventory/test_constructed.py::test_keyed_group_empty_value",
+    "test/units/plugins/inventory/test_constructed.py::test_keyed_group_separator",
+    "test/units/plugins/inventory/test_constructed.py::test_keyed_group_empty_construction"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "02",
+   "instance_id": "instance_ansible__ansible-185d41031660a676c43fbb781cd1335902024bfe-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5",
+   "base_commit": "a7c8093ce49145966c3af21e40fad9ee8912d297",
+   "base_date": "2021-04-16",
+   "gold_lines": 70,
+   "run_mode": "selected",
+   "selected_tests": [
+    "test/units/plugins/callback/test_callback.py"
+   ],
+   "fail_to_pass": [
+    "test/units/plugins/callback/test_callback.py::TestCallback::test_host_label_delegated",
+    "test/units/plugins/callback/test_callback.py::TestCallback::test_host_label"
+   ],
+   "pass_to_pass": [
+    "test/units/plugins/callback/test_callback.py::TestCallbackDumpResults::test_exception",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDiff::test_no_trailing_newline_both",
+    "test/units/plugins/callback/test_callback.py::TestCallbackOnMethods::test_on_any",
+    "test/units/plugins/callback/test_callback.py::TestCallbackResults::test_clean_results",
+    "test/units/plugins/callback/test_callback.py::TestCallbackResults::test_get_item_label_no_log",
+    "test/units/plugins/callback/test_callback.py::TestCallbackResults::test_clean_results_debug_task_no_invocation",
+    "test/units/plugins/callback/test_callback.py::TestCallbackResults::test_clean_results_debug_task",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDiff::test_difflist",
+    "test/units/plugins/callback/test_callback.py::TestCallback::test_display",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDiff::test_simple_diff",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDiff::test_no_trailing_newline_before",
+    "test/units/plugins/callback/test_callback.py::TestCallbackResults::test_clean_results_debug_task_empty_results",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDiff::test_no_trailing_newline_after",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDiff::test_diff_after_none",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDumpResults::test_diff",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDiff::test_diff_dicts",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDiff::test_no_trailing_newline_both_with_some_changes",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDumpResults::test_mixed_keys",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDiff::test_clear_file",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDiff::test_new_file",
+    "test/units/plugins/callback/test_callback.py::TestCallbackOnMethods::test_are_methods",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDumpResults::test_verbose",
+    "test/units/plugins/callback/test_callback.py::TestCallback::test_init",
+    "test/units/plugins/callback/test_callback.py::TestCallbackResults::test_get_item_label",
+    "test/units/plugins/callback/test_callback.py::TestCallback::test_display_verbose",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDiff::test_diff_before_none",
+    "test/units/plugins/callback/test_callback.py::TestCallbackDumpResults::test_internal_keys"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "03",
+   "instance_id": "instance_ansible__ansible-5640093f1ca63fd6af231cc8a7fb7d40e1907b8c-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5",
+   "base_commit": "a5a13246ce02fd4c4ce997627b4f42152e59d288",
+   "base_date": "2021-05-27",
+   "gold_lines": 31,
+   "run_mode": "selected",
+   "selected_tests": [
+    "test/units/plugins/action/test_gather_facts.py"
+   ],
+   "fail_to_pass": [
+    "test/units/plugins/action/test_gather_facts.py::TestNetworkFacts::test_network_gather_facts_fqcn",
+    "test/units/plugins/action/test_gather_facts.py::TestNetworkFacts::test_network_gather_facts_smart_facts_module_fqcn",
+    "test/units/plugins/action/test_gather_facts.py::TestNetworkFacts::test_network_gather_facts_smart_facts_module",
+    "test/units/plugins/action/test_gather_facts.py::TestNetworkFacts::test_network_gather_facts"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "04",
+   "instance_id": "instance_ansible__ansible-cd473dfb2fdbc97acf3293c134b21cbbcfa89ec3-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5",
+   "base_commit": "e8ae7211dabbd07093f50d6dfb383da3bb14f13d",
+   "base_date": "2021-06-17",
+   "gold_lines": 37,
+   "run_mode": "selected",
+   "selected_tests": [
+    "test/units/playbook/test_play.py"
+   ],
+   "fail_to_pass": [
+    "test/units/playbook/test_play.py::test_play_empty_hosts[False]",
+    "test/units/playbook/test_play.py::test_play_invalid_hosts_sequence[1]",
+    "test/units/playbook/test_play.py::test_play_invalid_hosts_sequence[value0]",
+    "test/units/playbook/test_play.py::test_play_empty_hosts[0]",
+    "test/units/playbook/test_play.py::test_play_none_hosts[value1]",
+    "test/units/playbook/test_play.py::test_play_none_hosts[value0]",
+    "test/units/playbook/test_play.py::test_play_invalid_hosts_value[value1]",
+    "test/units/playbook/test_play.py::test_play_invalid_hosts_value[value3]",
+    "test/units/playbook/test_play.py::test_play_invalid_hosts_sequence[1.75]",
+    "test/units/playbook/test_play.py::test_play_invalid_hosts_sequence[value1]",
+    "test/units/playbook/test_play.py::test_play_invalid_hosts_value[value2]",
+    "test/units/playbook/test_play.py::test_play_none_hosts[value2]",
+    "test/units/playbook/test_play.py::test_play_invalid_hosts_value[value0]",
+    "test/units/playbook/test_play.py::test_play_invalid_hosts_sequence[True]",
+    "test/units/playbook/test_play.py::test_play_invalid_hosts_sequence[value5]",
+    "test/units/playbook/test_play.py::test_play_invalid_hosts_value[value4]",
+    "test/units/playbook/test_play.py::test_play_invalid_hosts_value[value5]"
+   ],
+   "pass_to_pass": [
+    "test/units/playbook/test_play.py::test_empty_play",
+    "test/units/playbook/test_play.py::test_basic_play",
+    "test/units/playbook/test_play.py::test_play_empty_hosts[value1]",
+    "test/units/playbook/test_play.py::test_play_with_remote_user",
+    "test/units/playbook/test_play.py::test_play_with_roles",
+    "test/units/playbook/test_play.py::test_play_with_vars_files[value1-expected1]",
+    "test/units/playbook/test_play.py::test_play_with_bad_ds_type",
+    "test/units/playbook/test_play.py::test_play_with_vars_files[value2-expected2]",
+    "test/units/playbook/test_play.py::test_play_with_post_tasks",
+    "test/units/playbook/test_play.py::test_play_with_vars_files[my_vars.yml-expected0]",
+    "test/units/playbook/test_play.py::test_play_with_user_conflict",
+    "test/units/playbook/test_play.py::test_play_with_hosts_string",
+    "test/units/playbook/test_play.py::test_play_empty_hosts[value3]",
+    "test/units/playbook/test_play.py::test_play_with_handlers",
+    "test/units/playbook/test_play.py::test_bad_blocks_roles[_load_post_tasks]",
+    "test/units/playbook/test_play.py::test_play_empty_hosts[value0]",
+    "test/units/playbook/test_play.py::test_play_compile",
+    "test/units/playbook/test_play.py::test_bad_blocks_roles[_load_tasks]",
+    "test/units/playbook/test_play.py::test_play_with_tasks",
+    "test/units/playbook/test_play.py::test_play_with_vars_files[None-expected3]",
+    "test/units/playbook/test_play.py::test_play_empty_hosts[value2]",
+    "test/units/playbook/test_play.py::test_play_empty_hosts[]",
+    "test/units/playbook/test_play.py::test_bad_blocks_roles[_load_handlers]",
+    "test/units/playbook/test_play.py::test_play_with_vars",
+    "test/units/playbook/test_play.py::test_play_with_pre_tasks",
+    "test/units/playbook/test_play.py::test_play_hosts_template_expression",
+    "test/units/playbook/test_play.py::test_bad_blocks_roles[_load_pre_tasks]",
+    "test/units/playbook/test_play.py::test_play_empty_hosts[None]",
+    "test/units/playbook/test_play.py::test_bad_blocks_roles[_load_roles]",
+    "test/units/playbook/test_play.py::test_play_no_name_hosts_sequence"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "05",
+   "instance_id": "instance_ansible__ansible-415e08c2970757472314e515cb63a51ad825c45e-v7eee2454f617569fd6889f2211f75bc02a35f9f8",
+   "base_commit": "f05bcf569367904985c0e5796a4c14ce0b7d4be9",
+   "base_date": "2021-06-23",
+   "gold_lines": 72,
+   "run_mode": "selected",
+   "selected_tests": [
+    "test/units/executor/module_common/test_recursive_finder.py",
+    "test/units/module_utils/common/test_locale.py"
+   ],
+   "fail_to_pass": [
+    "test/units/executor/module_common/test_recursive_finder.py::TestRecursiveFinder::test_no_module_utils",
+    "test/units/executor/module_common/test_recursive_finder.py::TestRecursiveFinder::test_from_import_six",
+    "test/units/executor/module_common/test_recursive_finder.py::TestRecursiveFinder::test_import_six",
+    "test/units/executor/module_common/test_recursive_finder.py::TestRecursiveFinder::test_import_six_from_many_submodules",
+    "test/units/module_utils/common/test_locale.py::TestLocale::test_finding_best",
+    "test/units/module_utils/common/test_locale.py::TestLocale::test_finding_last",
+    "test/units/module_utils/common/test_locale.py::TestLocale::test_finding_middle",
+    "test/units/module_utils/common/test_locale.py::TestLocale::test_finding_prefered",
+    "test/units/module_utils/common/test_locale.py::TestLocale::test_finding_C_on_no_match"
+   ],
+   "pass_to_pass": [
+    "test/units/executor/module_common/test_recursive_finder.py::TestRecursiveFinder::test_module_utils_with_syntax_error",
+    "test/units/executor/module_common/test_recursive_finder.py::TestRecursiveFinder::test_module_utils_with_identation_error"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  }
+ ],
+ "success_rule": "ok = f2p_frac >= 0.9 and p2p_frac >= 0.9 (f2p/p2p pooled over all tasks; p2p = dataset p2p + derived p2p)",
+ "license_note": "This file holds test identifiers and metadata only (instance ids, base commits, docker image, fail-to-pass and pass-to-pass test names) that identify SWE-bench Pro rows for ansible/ansible. It contains no issue text and no patches. It derives from SWE-bench Pro and the upstream repository; upstream terms apply and this repository's MIT and CC BY 4.0 licences do not cover it. See THIRD_PARTY_NOTICES.md.",
+ "dep_changes": {},
+ "calibration_runs": [],
+ "published_success_rule": "A chain run counts as passed in the published results only if every fail-to-pass and every pass-to-pass test of every task in the chain passes (all_pass in grade.py). The looser 'success_rule' above is a secondary flag that the published results do not use."
+}

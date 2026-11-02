@@ -1,0 +1,3018 @@
+{
+ "generated_at": "2026-11-02",
+ "baseline": "__baseline__",
+ "baseline_label": "Baseline",
+ "conditions": [
+  "__baseline__",
+  "sonnet_graphify",
+  "sonnet_ponytail",
+  "sonnet_caveman",
+  "sonnet_rtk"
+ ],
+ "leaderboards": {
+  "cost": [
+   {
+    "condition": "sonnet_ponytail",
+    "is_baseline": false,
+    "cost_total": 15.77,
+    "cost_per_task": 1.2131,
+    "tokens_total": 38848338,
+    "tasks": 13,
+    "runs": 26,
+    "comparability": "comparable",
+    "wall_per_run_s": 365,
+    "total_wall_h": 2.64,
+    "successes": 20,
+    "graded_runs": 26,
+    "needs_cleanup": 0,
+    "savings_pct": 29.6,
+    "change_ci_low": -37.1,
+    "change_ci_high": -21.2
+   },
+   {
+    "condition": "sonnet_graphify",
+    "is_baseline": false,
+    "cost_total": 19.8574,
+    "cost_per_task": 1.5275,
+    "tokens_total": 52251626,
+    "tasks": 13,
+    "runs": 26,
+    "comparability": "comparable",
+    "wall_per_run_s": 449,
+    "total_wall_h": 3.24,
+    "successes": 22,
+    "graded_runs": 26,
+    "needs_cleanup": 0,
+    "savings_pct": 11.4,
+    "change_ci_low": -16.6,
+    "change_ci_high": -6.6
+   },
+   {
+    "condition": "sonnet_caveman",
+    "is_baseline": false,
+    "cost_total": 20.3244,
+    "cost_per_task": 1.5634,
+    "tokens_total": 53874386,
+    "tasks": 13,
+    "runs": 26,
+    "comparability": "comparable",
+    "wall_per_run_s": 466,
+    "total_wall_h": 3.36,
+    "successes": 22,
+    "graded_runs": 26,
+    "needs_cleanup": 0,
+    "savings_pct": 9.3,
+    "change_ci_low": -20.1,
+    "change_ci_high": 2.9
+   },
+   {
+    "condition": "sonnet_rtk",
+    "is_baseline": false,
+    "cost_total": 22.3431,
+    "cost_per_task": 1.7187,
+    "tokens_total": 60100754,
+    "tasks": 13,
+    "runs": 26,
+    "comparability": "comparable",
+    "wall_per_run_s": 546,
+    "total_wall_h": 3.94,
+    "successes": 22,
+    "graded_runs": 26,
+    "needs_cleanup": 0,
+    "savings_pct": 0.3,
+    "change_ci_low": -8.2,
+    "change_ci_high": 7.2
+   },
+   {
+    "condition": "__baseline__",
+    "is_baseline": true,
+    "cost_total": 22.4114,
+    "cost_per_task": 1.724,
+    "tokens_total": 60190598,
+    "tasks": 13,
+    "runs": 26,
+    "comparability": "reference_baseline",
+    "wall_per_run_s": 565,
+    "total_wall_h": 4.08,
+    "successes": 23,
+    "graded_runs": 26,
+    "needs_cleanup": 0,
+    "savings_pct": 0.0
+   }
+  ],
+  "quality": [
+   {
+    "condition": "sonnet_ponytail",
+    "quality_score": 76.92,
+    "value_per_usd": 63.0,
+    "success_rate": 76.9,
+    "graded_runs": 26,
+    "tasks": 13,
+    "runs": 26,
+    "comparability": "comparable"
+   },
+   {
+    "condition": "sonnet_graphify",
+    "quality_score": 84.62,
+    "value_per_usd": 55.0,
+    "success_rate": 84.6,
+    "graded_runs": 26,
+    "tasks": 13,
+    "runs": 26,
+    "comparability": "comparable"
+   },
+   {
+    "condition": "sonnet_caveman",
+    "quality_score": 84.62,
+    "value_per_usd": 54.0,
+    "success_rate": 84.6,
+    "graded_runs": 26,
+    "tasks": 13,
+    "runs": 26,
+    "comparability": "comparable"
+   },
+   {
+    "condition": "__baseline__",
+    "quality_score": 88.46,
+    "value_per_usd": 51.0,
+    "success_rate": 88.5,
+    "graded_runs": 26,
+    "tasks": 13,
+    "runs": 26,
+    "comparability": "reference_baseline"
+   },
+   {
+    "condition": "sonnet_rtk",
+    "quality_score": 84.62,
+    "value_per_usd": 49.0,
+    "success_rate": 84.6,
+    "graded_runs": 26,
+    "tasks": 13,
+    "runs": 26,
+    "comparability": "comparable"
+   }
+  ]
+ },
+ "suggestions": [
+  {
+   "pick": "Best value",
+   "condition": "sonnet_ponytail",
+   "detail": "63 quality per $"
+  },
+  {
+   "pick": "Cheapest",
+   "condition": "sonnet_ponytail",
+   "detail": "$1.213 per task (29.6% cheaper than baseline)"
+  }
+ ],
+ "charts": {
+  "metrics": [
+   {
+    "key": "cost_usd",
+    "label": "Cost (USD)",
+    "additive": true
+   },
+   {
+    "key": "wall_time_seconds",
+    "label": "Wall time (s)",
+    "additive": true
+   },
+   {
+    "key": "total_tokens",
+    "label": "Total tokens",
+    "additive": true
+   },
+   {
+    "key": "quality_score",
+    "label": "Quality score",
+    "additive": true
+   }
+  ],
+  "data": {
+   "cost_usd": {
+    "metric": "cost_usd",
+    "metric_label": "Cost (USD)",
+    "additive": true,
+    "mode": "per_test",
+    "x_mode": "task",
+    "agg": "mean",
+    "x_labels": [
+     "ansible_B",
+     "ansible_C",
+     "ansible_D",
+     "flipt_B",
+     "navidrome_A",
+     "nodebb_A",
+     "openlibrary_A",
+     "openlibrary_B",
+     "qutebrowser_A",
+     "qutebrowser_B",
+     "teleport_A",
+     "vuls_A",
+     "webclients_A"
+    ],
+    "series": [
+     {
+      "condition": "__baseline__",
+      "comparability": "reference_baseline",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 0.7214908999999999,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 1.6426324999999997,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 2.5202463,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 1.4101214,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 2.5240818999999997,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 0.7446882,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 2.6240463000000007,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 2.7287325000000004,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 1.6115161999999996,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 1.2569603,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 1.4309713999999998,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 1.9439867999999998,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 1.2519605000000005,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_graphify",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 0.7361775,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 1.7130287999999996,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 2.3076864,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 1.3137563999999997,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 2.2454411,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 0.7085316000000002,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 2.2136905999999996,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 2.5675306,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 1.0140608999999998,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 1.0404663,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 1.248065,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 1.6210262,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 1.1279041,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_ponytail",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 0.6316527000000001,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 0.8545290000000001,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 1.7973830000000004,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 1.1685043000000004,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 1.5391836,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 0.6451815000000001,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 1.9640290999999999,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 1.7869829999999993,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 0.7564704,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 0.8726045000000001,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 0.9230825,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 1.9562637999999999,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 0.8741176000000002,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_caveman",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 0.6799607,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 1.3565414000000002,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 1.8264964000000004,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 1.3060754,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 2.2778627000000005,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 0.5702022,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 2.9486729999999994,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 1.9509743,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 1.0582655,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 1.0085239000000001,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 1.3927979000000001,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 2.4984067000000003,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 1.449654,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_rtk",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 0.6171684,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 1.7839136999999998,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 2.3117754,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 1.5656931000000003,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 1.9986779000000001,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 0.7285138999999999,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 2.9291792000000005,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 3.0337211999999996,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 1.1862499,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 1.1358348999999999,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 1.5780808999999998,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 2.0475579,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 1.4266929999999998,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "wall_time_seconds": {
+    "metric": "wall_time_seconds",
+    "metric_label": "Wall time (s)",
+    "additive": true,
+    "mode": "per_test",
+    "x_mode": "task",
+    "agg": "mean",
+    "x_labels": [
+     "ansible_B",
+     "ansible_C",
+     "ansible_D",
+     "flipt_B",
+     "navidrome_A",
+     "nodebb_A",
+     "openlibrary_A",
+     "openlibrary_B",
+     "qutebrowser_A",
+     "qutebrowser_B",
+     "teleport_A",
+     "vuls_A",
+     "webclients_A"
+    ],
+    "series": [
+     {
+      "condition": "__baseline__",
+      "comparability": "reference_baseline",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 164.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 714.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 869.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 584.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 660.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 185.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 688.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 628.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 561.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 293.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 794.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 916.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 289.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_graphify",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 157.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 386.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 633.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 542.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 605.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 172.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 548.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 596.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 235.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 231.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 807.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 635.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 285.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_ponytail",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 138.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 172.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 339.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 481.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 430.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 143.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 794.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 454.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 171.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 201.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 516.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 635.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 266.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_caveman",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 147.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 227.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 347.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 614.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 665.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 161.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 706.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 508.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 238.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 235.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 561.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 1079.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 562.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_rtk",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 142.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 748.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 761.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 667.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 582.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 198.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 731.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 762.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 305.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 253.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 762.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 873.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 311.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "total_tokens": {
+    "metric": "total_tokens",
+    "metric_label": "Total tokens",
+    "additive": true,
+    "mode": "per_test",
+    "x_mode": "task",
+    "agg": "mean",
+    "x_labels": [
+     "ansible_B",
+     "ansible_C",
+     "ansible_D",
+     "flipt_B",
+     "navidrome_A",
+     "nodebb_A",
+     "openlibrary_A",
+     "openlibrary_B",
+     "qutebrowser_A",
+     "qutebrowser_B",
+     "teleport_A",
+     "vuls_A",
+     "webclients_A"
+    ],
+    "series": [
+     {
+      "condition": "__baseline__",
+      "comparability": "reference_baseline",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 1505441.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 4367778.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 7688417.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 3455472.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 7491351.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 1748530.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 6977425.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 7775117.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 4100681.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 3181626.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 3464106.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 5356200.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 3078450.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_graphify",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 1632744.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 4837392.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 6920222.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 3315623.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 6545833.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 1760321.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 5856007.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 6966382.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 2269295.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 2512439.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 2888233.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 4126777.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 2620354.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_ponytail",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 1300025.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 1841746.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 4712978.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 2764391.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 3842071.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 1450574.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 5070415.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 4691350.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 1560561.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 2074292.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 1925356.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 5562872.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 2051703.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_caveman",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 1532211.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 3530456.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 4796097.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 3122397.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 6540437.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 1291832.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 8559055.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 4989940.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 2199791.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 2438030.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 3357906.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 7732428.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 3783801.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_rtk",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 1328304.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 5199475.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 6680585.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 3820324.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 5434257.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 1698729.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 8153967.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 9310052.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 2647828.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 2795511.5,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 3827117.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 5693521.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 3511083.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "quality_score": {
+    "metric": "quality_score",
+    "metric_label": "Quality score",
+    "additive": false,
+    "mode": "per_test",
+    "x_mode": "task",
+    "agg": "mean",
+    "x_labels": [
+     "ansible_B",
+     "ansible_C",
+     "ansible_D",
+     "flipt_B",
+     "navidrome_A",
+     "nodebb_A",
+     "openlibrary_A",
+     "openlibrary_B",
+     "qutebrowser_A",
+     "qutebrowser_B",
+     "teleport_A",
+     "vuls_A",
+     "webclients_A"
+    ],
+    "series": [
+     {
+      "condition": "__baseline__",
+      "comparability": "reference_baseline",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 50.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 0.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_graphify",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 0.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 0.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_ponytail",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 50.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 50.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 0.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 0.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_caveman",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 0.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 50.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 50.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_rtk",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "ansible_B",
+        "task_id": "ansible_B",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 2,
+        "label": "ansible_C",
+        "task_id": "ansible_C",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 3,
+        "label": "ansible_D",
+        "task_id": "ansible_D",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 4,
+        "label": "flipt_B",
+        "task_id": "flipt_B",
+        "value": 0.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 5,
+        "label": "navidrome_A",
+        "task_id": "navidrome_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 6,
+        "label": "nodebb_A",
+        "task_id": "nodebb_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 7,
+        "label": "openlibrary_A",
+        "task_id": "openlibrary_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 8,
+        "label": "openlibrary_B",
+        "task_id": "openlibrary_B",
+        "value": 0.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 9,
+        "label": "qutebrowser_A",
+        "task_id": "qutebrowser_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 10,
+        "label": "qutebrowser_B",
+        "task_id": "qutebrowser_B",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 11,
+        "label": "teleport_A",
+        "task_id": "teleport_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 12,
+        "label": "vuls_A",
+        "task_id": "vuls_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       },
+       {
+        "x": 13,
+        "label": "webclients_A",
+        "task_id": "webclients_A",
+        "value": 100.0,
+        "run_ids": [
+         "",
+         ""
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "set_desc": "SWE-bench Pro chains: SWE-bench Pro tasks chained together into longer tasks that start to reflect real coding work. 13 chains × 2 trials, run on every tool (130 runs).",
+ "set_tested": "13 chains of dependent SWE-bench Pro tasks in one repository (ansible, flipt, navidrome, nodebb, openlibrary, qutebrowser, teleport, vuls, webclients), each run twice per tool. A run passes only if every task in the chain passes. Claude Sonnet 5.5 (high effort) in Claude Code 2.1.293. Tool versions: graphify 0.9.95, ponytail 5.3.2, caveman upstream 1f951fb (CAVEMAN_DEFAULT_MODE=caveman), rtk 1.0.1.",
+ "units": 13,
+ "interpretation_note": "Note on interpretation: cost differences between conditions include everything the model does differently when a tool is active (extra turns, extra tool calls, sub-agent delegation). Delegation to sub-agents is model behaviour that a tool can change; it is not a benchmark setting or an error, and no cost difference in this file is attributed to it. A difference whose 95% range (change_ci_low to change_ci_high) includes 0 could be noise and is not a confirmed difference."
+}

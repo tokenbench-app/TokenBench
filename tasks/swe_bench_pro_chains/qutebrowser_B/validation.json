@@ -1,0 +1,111 @@
+{
+ "chain_id": "qutebrowser_B",
+ "tasks": [
+  {
+   "k": "01",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "02",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "03",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 2,
+   "gold_flaky": []
+  },
+  {
+   "k": "04",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "05",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [
+    "tests/unit/config/test_configtypes.py::TestFormatString::test_to_py_invalid[{foo.attr}]",
+    "tests/unit/config/test_configtypes.py::TestFormatString::test_to_py_invalid[{foo[999]}]"
+   ],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "06",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 1,
+   "gold_flaky": []
+  },
+  {
+   "k": "07",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  }
+ ],
+ "gold": {
+  "chain_id": "qutebrowser_B",
+  "apply": [
+   "clean"
+  ],
+  "base_tree_match": true,
+  "f2p_pass": 414,
+  "f2p_total": 414,
+  "p2p_pass": 1755,
+  "p2p_total": 1755,
+  "f2p_frac": 1.0,
+  "p2p_frac": 1.0,
+  "tasks_resolved": 7,
+  "n_tasks": 7,
+  "ok": true,
+  "all_pass": true
+ },
+ "base": {
+  "chain_id": "qutebrowser_B",
+  "apply": [
+   "empty"
+  ],
+  "base_tree_match": true,
+  "f2p_pass": 0,
+  "f2p_total": 414,
+  "p2p_pass": 1755,
+  "p2p_total": 1755,
+  "f2p_frac": 0.0,
+  "p2p_frac": 1.0,
+  "tasks_resolved": 0,
+  "n_tasks": 7,
+  "ok": false,
+  "all_pass": false
+ },
+ "p2p_superseded": {
+  "05": [
+   "tests/unit/config/test_configtypes.py::TestFormatString::test_to_py_invalid[{foo.attr}]",
+   "tests/unit/config/test_configtypes.py::TestFormatString::test_to_py_invalid[{foo[999]}]"
+  ]
+ }
+}

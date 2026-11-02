@@ -1,0 +1,120 @@
+{
+ "chain_id": "ansible_D",
+ "tasks": [
+  {
+   "k": "01",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "02",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "03",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "04",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "05",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "06",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "07",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "08",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 15,
+   "gold_flaky": []
+  },
+  {
+   "k": "09",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  }
+ ],
+ "gold": {
+  "chain_id": "ansible_D",
+  "apply": [
+   "clean"
+  ],
+  "base_tree_match": true,
+  "f2p_pass": 46,
+  "f2p_total": 46,
+  "p2p_pass": 250,
+  "p2p_total": 250,
+  "f2p_frac": 1.0,
+  "p2p_frac": 1.0,
+  "tasks_resolved": 9,
+  "n_tasks": 9,
+  "ok": true,
+  "all_pass": true
+ },
+ "base": {
+  "chain_id": "ansible_D",
+  "apply": [
+   "empty"
+  ],
+  "base_tree_match": true,
+  "f2p_pass": 0,
+  "f2p_total": 46,
+  "p2p_pass": 250,
+  "p2p_total": 250,
+  "f2p_frac": 0.0,
+  "p2p_frac": 1.0,
+  "tasks_resolved": 0,
+  "n_tasks": 9,
+  "ok": false,
+  "all_pass": false
+ }
+}

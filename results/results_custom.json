@@ -1,0 +1,978 @@
+{
+ "generated_at": "2026-11-02",
+ "baseline": "__baseline__",
+ "baseline_label": "Baseline",
+ "conditions": [
+  "__baseline__",
+  "sonnet_graphify",
+  "sonnet_ponytail",
+  "sonnet_caveman",
+  "sonnet_rtk"
+ ],
+ "leaderboards": {
+  "cost": [
+   {
+    "condition": "sonnet_ponytail",
+    "is_baseline": false,
+    "cost_total": 29.6917,
+    "cost_per_task": 9.8972,
+    "tokens_total": 97264628,
+    "tasks": 3,
+    "runs": 6,
+    "comparability": "comparable",
+    "wall_per_run_s": 2588,
+    "total_wall_h": 4.31,
+    "successes": 4,
+    "graded_runs": 6,
+    "needs_cleanup": 1,
+    "savings_pct": 16.1,
+    "change_ci_low": -22.9,
+    "change_ci_high": -6.7
+   },
+   {
+    "condition": "__baseline__",
+    "is_baseline": true,
+    "cost_total": 35.4067,
+    "cost_per_task": 11.8022,
+    "tokens_total": 121341818,
+    "tasks": 3,
+    "runs": 6,
+    "comparability": "reference_baseline",
+    "wall_per_run_s": 2804,
+    "total_wall_h": 4.67,
+    "successes": 4,
+    "graded_runs": 6,
+    "needs_cleanup": 2,
+    "savings_pct": 0.0
+   },
+   {
+    "condition": "sonnet_graphify",
+    "is_baseline": false,
+    "cost_total": 39.264,
+    "cost_per_task": 13.088,
+    "tokens_total": 136200344,
+    "tasks": 3,
+    "runs": 6,
+    "comparability": "comparable",
+    "wall_per_run_s": 2789,
+    "total_wall_h": 4.65,
+    "successes": 3,
+    "graded_runs": 6,
+    "needs_cleanup": 1,
+    "savings_pct": -10.9,
+    "change_ci_low": -8.2,
+    "change_ci_high": 34.2
+   },
+   {
+    "condition": "sonnet_rtk",
+    "is_baseline": false,
+    "cost_total": 39.754,
+    "cost_per_task": 13.2513,
+    "tokens_total": 137391004,
+    "tasks": 3,
+    "runs": 6,
+    "comparability": "comparable",
+    "wall_per_run_s": 3276,
+    "total_wall_h": 5.46,
+    "successes": 3,
+    "graded_runs": 6,
+    "needs_cleanup": 2,
+    "savings_pct": -12.3,
+    "change_ci_low": -15.8,
+    "change_ci_high": 49.1
+   },
+   {
+    "condition": "sonnet_caveman",
+    "is_baseline": false,
+    "cost_total": 44.4199,
+    "cost_per_task": 14.8066,
+    "tokens_total": 158443949,
+    "tasks": 3,
+    "runs": 6,
+    "comparability": "comparable",
+    "wall_per_run_s": 2954,
+    "total_wall_h": 4.92,
+    "successes": 4,
+    "graded_runs": 6,
+    "needs_cleanup": 1,
+    "savings_pct": -25.5,
+    "change_ci_low": -3.7,
+    "change_ci_high": 71.8
+   }
+  ],
+  "quality": [
+   {
+    "condition": "sonnet_ponytail",
+    "quality_score": 91.34,
+    "value_per_usd": 9.0,
+    "success_rate": 66.7,
+    "graded_runs": 6,
+    "tasks": 3,
+    "runs": 6,
+    "comparability": "comparable"
+   },
+   {
+    "condition": "__baseline__",
+    "quality_score": 94.08,
+    "value_per_usd": 8.0,
+    "success_rate": 66.7,
+    "graded_runs": 6,
+    "tasks": 3,
+    "runs": 6,
+    "comparability": "reference_baseline"
+   },
+   {
+    "condition": "sonnet_graphify",
+    "quality_score": 91.98,
+    "value_per_usd": 7.0,
+    "success_rate": 50.0,
+    "graded_runs": 6,
+    "tasks": 3,
+    "runs": 6,
+    "comparability": "comparable"
+   },
+   {
+    "condition": "sonnet_rtk",
+    "quality_score": 92.21,
+    "value_per_usd": 7.0,
+    "success_rate": 50.0,
+    "graded_runs": 6,
+    "tasks": 3,
+    "runs": 6,
+    "comparability": "comparable"
+   },
+   {
+    "condition": "sonnet_caveman",
+    "quality_score": 93.69,
+    "value_per_usd": 6.0,
+    "success_rate": 66.7,
+    "graded_runs": 6,
+    "tasks": 3,
+    "runs": 6,
+    "comparability": "comparable"
+   }
+  ]
+ },
+ "suggestions": [
+  {
+   "pick": "Best value",
+   "condition": "sonnet_ponytail",
+   "detail": "9 quality per $"
+  },
+  {
+   "pick": "Cheapest",
+   "condition": "sonnet_ponytail",
+   "detail": "$9.897 per task (16.1% cheaper than baseline)"
+  }
+ ],
+ "charts": {
+  "metrics": [
+   {
+    "key": "cost_usd",
+    "label": "Cost (USD)",
+    "additive": true
+   },
+   {
+    "key": "wall_time_seconds",
+    "label": "Wall time (s)",
+    "additive": true
+   },
+   {
+    "key": "total_tokens",
+    "label": "Total tokens",
+    "additive": true
+   },
+   {
+    "key": "quality_score",
+    "label": "Quality score",
+    "additive": true
+   }
+  ],
+  "data": {
+   "cost_usd": {
+    "metric": "cost_usd",
+    "metric_label": "Cost (USD)",
+    "additive": true,
+    "mode": "per_test",
+    "x_mode": "task",
+    "agg": "mean",
+    "x_labels": [
+     "bizflow_long_ar_001",
+     "logforge_long_query_001",
+     "paygate_long_settlement_001"
+    ],
+    "series": [
+     {
+      "condition": "__baseline__",
+      "comparability": "reference_baseline",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 13.306915399999998,
+        "run_ids": [
+         "20261028_182202_bizflow-go-sql_bizflow_long_ar_001_b4055d",
+         "20261028_231622_bizflow-go-sql_bizflow_long_ar_001_f6f560"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 11.611247499999998,
+        "run_ids": [
+         "20261029_091618_logforge-cpp_logforge_long_query_001_f06bee",
+         "20261029_121208_logforge-cpp_logforge_long_query_001_98e66d"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 10.488493799999999,
+        "run_ids": [
+         "20261028_201806_paygate-php-portal_paygate_long_settlement_001_f326b8",
+         "20261028_222757_paygate-php-portal_paygate_long_settlement_001_afd87a"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_graphify",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 17.853151500000003,
+        "run_ids": [
+         "20261028_182210_bizflow-go-sql_bizflow_long_ar_001_476b95",
+         "20261029_072337_bizflow-go-sql_bizflow_long_ar_001_11e8ca"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 11.7865434,
+        "run_ids": [
+         "20261029_093711_logforge-cpp_logforge_long_query_001_52003e",
+         "20261029_083522_logforge-cpp_logforge_long_query_001_67c244"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 9.6242648,
+        "run_ids": [
+         "20261028_201814_paygate-php-portal_paygate_long_settlement_001_68e94e",
+         "20261028_225725_paygate-php-portal_paygate_long_settlement_001_d42001"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_ponytail",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 10.9529763,
+        "run_ids": [
+         "20261028_230517_bizflow-go-sql_bizflow_long_ar_001_2a77f7",
+         "20261029_061747_bizflow-go-sql_bizflow_long_ar_001_c08d49"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 8.9561889,
+        "run_ids": [
+         "20261029_075831_logforge-cpp_logforge_long_query_001_454ae7",
+         "20261029_121232_logforge-cpp_logforge_long_query_001_18ebf1"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 9.782493399999996,
+        "run_ids": [
+         "20261028_205516_paygate-php-portal_paygate_long_settlement_001_4f7bd5",
+         "20261029_061739_paygate-php-portal_paygate_long_settlement_001_0466d0"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_caveman",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 22.855098500000004,
+        "run_ids": [
+         "20261028_231213_bizflow-go-sql_bizflow_long_ar_001_60315d",
+         "20261028_235141_bizflow-go-sql_bizflow_long_ar_001_5feea4"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 11.465284099999998,
+        "run_ids": [
+         "20261029_074633_logforge-cpp_logforge_long_query_001_c3d315",
+         "20261029_121224_logforge-cpp_logforge_long_query_001_282def"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 10.099553199999999,
+        "run_ids": [
+         "20261028_201830_paygate-php-portal_paygate_long_settlement_001_546718",
+         "20261028_214745_paygate-php-portal_paygate_long_settlement_001_3f5da6"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_rtk",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 13.603920800000003,
+        "run_ids": [
+         "20261028_190441_bizflow-go-sql_bizflow_long_ar_001_4ee415",
+         "20261028_232931_bizflow-go-sql_bizflow_long_ar_001_d5bd24"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 17.313807699999998,
+        "run_ids": [
+         "20261029_065141_logforge-cpp_logforge_long_query_001_376e66",
+         "20261029_121216_logforge-cpp_logforge_long_query_001_729ccc"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 8.8362741,
+        "run_ids": [
+         "20261028_204820_paygate-php-portal_paygate_long_settlement_001_7da387",
+         "20261028_222756_paygate-php-portal_paygate_long_settlement_001_65b608"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "wall_time_seconds": {
+    "metric": "wall_time_seconds",
+    "metric_label": "Wall time (s)",
+    "additive": true,
+    "mode": "per_test",
+    "x_mode": "task",
+    "agg": "mean",
+    "x_labels": [
+     "bizflow_long_ar_001",
+     "logforge_long_query_001",
+     "paygate_long_settlement_001"
+    ],
+    "series": [
+     {
+      "condition": "__baseline__",
+      "comparability": "reference_baseline",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 2252.40975,
+        "run_ids": [
+         "20261028_182202_bizflow-go-sql_bizflow_long_ar_001_b4055d",
+         "20261028_231622_bizflow-go-sql_bizflow_long_ar_001_f6f560"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 3501.9588000000003,
+        "run_ids": [
+         "20261029_091618_logforge-cpp_logforge_long_query_001_f06bee",
+         "20261029_121208_logforge-cpp_logforge_long_query_001_98e66d"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 2657.91435,
+        "run_ids": [
+         "20261028_201806_paygate-php-portal_paygate_long_settlement_001_f326b8",
+         "20261028_222757_paygate-php-portal_paygate_long_settlement_001_afd87a"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_graphify",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 3253.6819499999997,
+        "run_ids": [
+         "20261028_182210_bizflow-go-sql_bizflow_long_ar_001_476b95",
+         "20261029_072337_bizflow-go-sql_bizflow_long_ar_001_11e8ca"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 3353.90055,
+        "run_ids": [
+         "20261029_093711_logforge-cpp_logforge_long_query_001_52003e",
+         "20261029_083522_logforge-cpp_logforge_long_query_001_67c244"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 1760.0438,
+        "run_ids": [
+         "20261028_201814_paygate-php-portal_paygate_long_settlement_001_68e94e",
+         "20261028_225725_paygate-php-portal_paygate_long_settlement_001_d42001"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_ponytail",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 2484.331,
+        "run_ids": [
+         "20261028_230517_bizflow-go-sql_bizflow_long_ar_001_2a77f7",
+         "20261029_061747_bizflow-go-sql_bizflow_long_ar_001_c08d49"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 3001.7430999999997,
+        "run_ids": [
+         "20261029_075831_logforge-cpp_logforge_long_query_001_454ae7",
+         "20261029_121232_logforge-cpp_logforge_long_query_001_18ebf1"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 2278.94755,
+        "run_ids": [
+         "20261028_205516_paygate-php-portal_paygate_long_settlement_001_4f7bd5",
+         "20261029_061739_paygate-php-portal_paygate_long_settlement_001_0466d0"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_caveman",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 3409.0971,
+        "run_ids": [
+         "20261028_231213_bizflow-go-sql_bizflow_long_ar_001_60315d",
+         "20261028_235141_bizflow-go-sql_bizflow_long_ar_001_5feea4"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 3202.6312500000004,
+        "run_ids": [
+         "20261029_074633_logforge-cpp_logforge_long_query_001_c3d315",
+         "20261029_121224_logforge-cpp_logforge_long_query_001_282def"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 2248.97735,
+        "run_ids": [
+         "20261028_201830_paygate-php-portal_paygate_long_settlement_001_546718",
+         "20261028_214745_paygate-php-portal_paygate_long_settlement_001_3f5da6"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_rtk",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 2960.8375,
+        "run_ids": [
+         "20261028_190441_bizflow-go-sql_bizflow_long_ar_001_4ee415",
+         "20261028_232931_bizflow-go-sql_bizflow_long_ar_001_d5bd24"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 4815.9201,
+        "run_ids": [
+         "20261029_065141_logforge-cpp_logforge_long_query_001_376e66",
+         "20261029_121216_logforge-cpp_logforge_long_query_001_729ccc"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 2050.8915,
+        "run_ids": [
+         "20261028_204820_paygate-php-portal_paygate_long_settlement_001_7da387",
+         "20261028_222756_paygate-php-portal_paygate_long_settlement_001_65b608"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "total_tokens": {
+    "metric": "total_tokens",
+    "metric_label": "Total tokens",
+    "additive": true,
+    "mode": "per_test",
+    "x_mode": "task",
+    "agg": "mean",
+    "x_labels": [
+     "bizflow_long_ar_001",
+     "logforge_long_query_001",
+     "paygate_long_settlement_001"
+    ],
+    "series": [
+     {
+      "condition": "__baseline__",
+      "comparability": "reference_baseline",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 46100928.0,
+        "run_ids": [
+         "20261028_182202_bizflow-go-sql_bizflow_long_ar_001_b4055d",
+         "20261028_231622_bizflow-go-sql_bizflow_long_ar_001_f6f560"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 39734671.0,
+        "run_ids": [
+         "20261029_091618_logforge-cpp_logforge_long_query_001_f06bee",
+         "20261029_121208_logforge-cpp_logforge_long_query_001_98e66d"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 35506219.5,
+        "run_ids": [
+         "20261028_201806_paygate-php-portal_paygate_long_settlement_001_f326b8",
+         "20261028_222757_paygate-php-portal_paygate_long_settlement_001_afd87a"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_graphify",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 64026779.0,
+        "run_ids": [
+         "20261028_182210_bizflow-go-sql_bizflow_long_ar_001_476b95",
+         "20261029_072337_bizflow-go-sql_bizflow_long_ar_001_11e8ca"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 40119957.0,
+        "run_ids": [
+         "20261029_093711_logforge-cpp_logforge_long_query_001_52003e",
+         "20261029_083522_logforge-cpp_logforge_long_query_001_67c244"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 32053608.5,
+        "run_ids": [
+         "20261028_201814_paygate-php-portal_paygate_long_settlement_001_68e94e",
+         "20261028_225725_paygate-php-portal_paygate_long_settlement_001_d42001"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_ponytail",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 35252868.0,
+        "run_ids": [
+         "20261028_230517_bizflow-go-sql_bizflow_long_ar_001_2a77f7",
+         "20261029_061747_bizflow-go-sql_bizflow_long_ar_001_c08d49"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 28990929.0,
+        "run_ids": [
+         "20261029_075831_logforge-cpp_logforge_long_query_001_454ae7",
+         "20261029_121232_logforge-cpp_logforge_long_query_001_18ebf1"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 33020830.5,
+        "run_ids": [
+         "20261028_205516_paygate-php-portal_paygate_long_settlement_001_4f7bd5",
+         "20261029_061739_paygate-php-portal_paygate_long_settlement_001_0466d0"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_caveman",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 84467715.5,
+        "run_ids": [
+         "20261028_231213_bizflow-go-sql_bizflow_long_ar_001_60315d",
+         "20261028_235141_bizflow-go-sql_bizflow_long_ar_001_5feea4"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 39547482.0,
+        "run_ids": [
+         "20261029_074633_logforge-cpp_logforge_long_query_001_c3d315",
+         "20261029_121224_logforge-cpp_logforge_long_query_001_282def"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 34428751.5,
+        "run_ids": [
+         "20261028_201830_paygate-php-portal_paygate_long_settlement_001_546718",
+         "20261028_214745_paygate-php-portal_paygate_long_settlement_001_3f5da6"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_rtk",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 45434181.0,
+        "run_ids": [
+         "20261028_190441_bizflow-go-sql_bizflow_long_ar_001_4ee415",
+         "20261028_232931_bizflow-go-sql_bizflow_long_ar_001_d5bd24"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 63923207.5,
+        "run_ids": [
+         "20261029_065141_logforge-cpp_logforge_long_query_001_376e66",
+         "20261029_121216_logforge-cpp_logforge_long_query_001_729ccc"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 28033615.0,
+        "run_ids": [
+         "20261028_204820_paygate-php-portal_paygate_long_settlement_001_7da387",
+         "20261028_222756_paygate-php-portal_paygate_long_settlement_001_65b608"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "quality_score": {
+    "metric": "quality_score",
+    "metric_label": "Quality score",
+    "additive": false,
+    "mode": "per_test",
+    "x_mode": "task",
+    "agg": "mean",
+    "x_labels": [
+     "bizflow_long_ar_001",
+     "logforge_long_query_001",
+     "paygate_long_settlement_001"
+    ],
+    "series": [
+     {
+      "condition": "__baseline__",
+      "comparability": "reference_baseline",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 97.10225,
+        "run_ids": [
+         "20261028_182202_bizflow-go-sql_bizflow_long_ar_001_b4055d",
+         "20261028_231622_bizflow-go-sql_bizflow_long_ar_001_f6f560"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 91.95949999999999,
+        "run_ids": [
+         "20261029_091618_logforge-cpp_logforge_long_query_001_f06bee",
+         "20261029_121208_logforge-cpp_logforge_long_query_001_98e66d"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 93.18185,
+        "run_ids": [
+         "20261028_201806_paygate-php-portal_paygate_long_settlement_001_f326b8",
+         "20261028_222757_paygate-php-portal_paygate_long_settlement_001_afd87a"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_graphify",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 92.41069999999999,
+        "run_ids": [
+         "20261028_182210_bizflow-go-sql_bizflow_long_ar_001_476b95",
+         "20261029_072337_bizflow-go-sql_bizflow_long_ar_001_11e8ca"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 91.04055,
+        "run_ids": [
+         "20261029_093711_logforge-cpp_logforge_long_query_001_52003e",
+         "20261029_083522_logforge-cpp_logforge_long_query_001_67c244"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 92.5,
+        "run_ids": [
+         "20261028_201814_paygate-php-portal_paygate_long_settlement_001_68e94e",
+         "20261028_225725_paygate-php-portal_paygate_long_settlement_001_d42001"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_ponytail",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 88.68504999999999,
+        "run_ids": [
+         "20261028_230517_bizflow-go-sql_bizflow_long_ar_001_2a77f7",
+         "20261029_061747_bizflow-go-sql_bizflow_long_ar_001_c08d49"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 88.05405,
+        "run_ids": [
+         "20261029_075831_logforge-cpp_logforge_long_query_001_454ae7",
+         "20261029_121232_logforge-cpp_logforge_long_query_001_18ebf1"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 97.2727,
+        "run_ids": [
+         "20261028_205516_paygate-php-portal_paygate_long_settlement_001_4f7bd5",
+         "20261029_061739_paygate-php-portal_paygate_long_settlement_001_0466d0"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_caveman",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 97.79225,
+        "run_ids": [
+         "20261028_231213_bizflow-go-sql_bizflow_long_ar_001_60315d",
+         "20261028_235141_bizflow-go-sql_bizflow_long_ar_001_5feea4"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 88.7432,
+        "run_ids": [
+         "20261029_074633_logforge-cpp_logforge_long_query_001_c3d315",
+         "20261029_121224_logforge-cpp_logforge_long_query_001_282def"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 94.54544999999999,
+        "run_ids": [
+         "20261028_201830_paygate-php-portal_paygate_long_settlement_001_546718",
+         "20261028_214745_paygate-php-portal_paygate_long_settlement_001_3f5da6"
+        ]
+       }
+      ]
+     },
+     {
+      "condition": "sonnet_rtk",
+      "comparability": "comparable",
+      "points": [
+       {
+        "x": 1,
+        "label": "bizflow_long_ar_001",
+        "task_id": "bizflow_long_ar_001",
+        "value": 92.82465,
+        "run_ids": [
+         "20261028_190441_bizflow-go-sql_bizflow_long_ar_001_4ee415",
+         "20261028_232931_bizflow-go-sql_bizflow_long_ar_001_d5bd24"
+        ]
+       },
+       {
+        "x": 2,
+        "label": "logforge_long_query_001",
+        "task_id": "logforge_long_query_001",
+        "value": 95.8649,
+        "run_ids": [
+         "20261029_065141_logforge-cpp_logforge_long_query_001_376e66",
+         "20261029_121216_logforge-cpp_logforge_long_query_001_729ccc"
+        ]
+       },
+       {
+        "x": 3,
+        "label": "paygate_long_settlement_001",
+        "task_id": "paygate_long_settlement_001",
+        "value": 87.95455000000001,
+        "run_ids": [
+         "20261028_204820_paygate-php-portal_paygate_long_settlement_001_7da387",
+         "20261028_222756_paygate-php-portal_paygate_long_settlement_001_65b608"
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "set_desc": "Custom long tasks: 3 tasks we made to reflect real, heavy development work. They are a very hard challenge, built to test whether the tools actually work. 30 runs.",
+ "set_tested": "3 long tasks (bizflow Go, logforge C++, paygate PHP), each run twice per tool. Claude Sonnet 5.5 (high effort) in Claude Code 2.1.293. Tool versions: graphify 0.9.95, ponytail 5.3.2, caveman upstream 1f951fb (CAVEMAN_DEFAULT_MODE=caveman), rtk 1.0.1.",
+ "units": 3,
+ "interpretation_note": "Note on interpretation: cost differences between conditions include everything the model does differently when a tool is active (extra turns, extra tool calls, sub-agent delegation). Delegation to sub-agents is model behaviour that a tool can change; it is not a benchmark setting or an error, and no cost difference in this file is attributed to it. A difference whose 95% range (change_ci_low to change_ci_high) includes 0 could be noise and is not a confirmed difference."
+}

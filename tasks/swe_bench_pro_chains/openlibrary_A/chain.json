@@ -1,0 +1,262 @@
+{
+ "chain_id": "openlibrary_A",
+ "repo": "internetarchive/openlibrary",
+ "language": "python",
+ "source": "ScaleAI/SWE-bench_Pro V2 (HF default config)",
+ "base_instance": "instance_internetarchive__openlibrary-1be7de788a444f6255e89c10ef6aa608550604a8-v29f82c9cf21d57b242f8d8b0e541525d259e2d63",
+ "base_commit": "8b933806b52d3785f98d2c397032c8b97a88feb2",
+ "base_tree": "2bbff2f168e5defc9bad661dfd35f959881b7552",
+ "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_internetarchive__openlibrary-1be7de788a444f6255e89c10ef6aa608550604a8-v29f82c9cf21d57b242f8d8b0e541525d259e2d63",
+ "gold_lines": 1128,
+ "n_tasks": 7,
+ "tasks": [
+  {
+   "k": "01",
+   "instance_id": "instance_internetarchive__openlibrary-1be7de788a444f6255e89c10ef6aa608550604a8-v29f82c9cf21d57b242f8d8b0e541525d259e2d63",
+   "base_commit": "8b933806b52d3785f98d2c397032c8b97a88feb2",
+   "base_date": "2023-10-25",
+   "gold_lines": 148,
+   "run_mode": "selected",
+   "selected_tests": [
+    "openlibrary/catalog/merge/tests/test_merge_marc.py",
+    "openlibrary/tests/catalog/test_utils.py",
+    "openlibrary/catalog/add_book/tests/test_match.py"
+   ],
+   "fail_to_pass": [
+    "openlibrary/catalog/merge/tests/test_merge_marc.py::TestAuthors::test_author_contrib",
+    "openlibrary/catalog/merge/tests/test_merge_marc.py::TestTitles::test_build_titles",
+    "openlibrary/catalog/merge/tests/test_merge_marc.py::TestTitles::test_build_titles_ampersand",
+    "openlibrary/catalog/merge/tests/test_merge_marc.py::TestTitles::test_build_titles_complex",
+    "openlibrary/catalog/merge/tests/test_merge_marc.py::TestRecordMatching::test_match_without_ISBN",
+    "openlibrary/catalog/merge/tests/test_merge_marc.py::TestRecordMatching::test_match_low_threshold"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "02",
+   "instance_id": "instance_internetarchive__openlibrary-dbbd9d539c6d4fd45d5be9662aa19b6d664b5137-v08d8e8889ec945ab821fb156c04c7d2e2810debb",
+   "base_commit": "409914bf541b32b2160200b7623060f2b5fab6c0",
+   "base_date": "2023-10-25",
+   "gold_lines": 38,
+   "run_mode": "selected",
+   "selected_tests": [
+    "openlibrary/plugins/openlibrary/tests/test_lists.py"
+   ],
+   "fail_to_pass": [
+    "openlibrary/plugins/openlibrary/tests/test_lists.py::TestListRecord::test_from_input_with_data"
+   ],
+   "pass_to_pass": [
+    "openlibrary/plugins/openlibrary/tests/test_lists.py::TestListRecord::test_from_input_no_data",
+    "openlibrary/plugins/openlibrary/tests/test_lists.py::TestListRecord::test_from_input_seeds[seeds0-expected0]",
+    "openlibrary/plugins/openlibrary/tests/test_lists.py::TestListRecord::test_from_input_seeds[seeds1-expected1]",
+    "openlibrary/plugins/openlibrary/tests/test_lists.py::TestListRecord::test_from_input_seeds[seeds2-expected2]",
+    "openlibrary/plugins/openlibrary/tests/test_lists.py::TestListRecord::test_from_input_seeds[seeds3-expected3]"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "03",
+   "instance_id": "instance_internetarchive__openlibrary-3f7db6bbbcc7c418b3db72d157c6aed1d45b2ccf-v430f20c722405e462d9ef44dee7d34c41e76fe7a",
+   "base_commit": "c46e5170e93bbfac133dd1e2e1e3b56882f2519f",
+   "base_date": "2023-11-14",
+   "gold_lines": 208,
+   "run_mode": "selected",
+   "selected_tests": [
+    "scripts/tests/test_isbndb.py"
+   ],
+   "fail_to_pass": [
+    "scripts/tests/test_isbndb.py::test_isbndb_to_ol_item",
+    "scripts/tests/test_isbndb.py::test_is_nonbook[DVD-True]",
+    "scripts/tests/test_isbndb.py::test_is_nonbook[dvd-True]",
+    "scripts/tests/test_isbndb.py::test_is_nonbook[audio-True]",
+    "scripts/tests/test_isbndb.py::test_is_nonbook[cassette-True]",
+    "scripts/tests/test_isbndb.py::test_is_nonbook[paperback-False]",
+    "scripts/tests/test_isbndb.py::test_is_nonbook[audio cassette-True]",
+    "scripts/tests/test_isbndb.py::test_get_line_returns_none_on_invalid_json"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "04",
+   "instance_id": "instance_internetarchive__openlibrary-322d7a46cdc965bfabbf9500e98fde098c9d95b2-v13642507b4fc1f8d234172bf8129942da2c2ca26",
+   "base_commit": "0d5acead6fdfb5e41a1d29a076a6e89ad1a39027",
+   "base_date": "2023-12-14",
+   "gold_lines": 483,
+   "run_mode": "selected",
+   "selected_tests": [
+    "openlibrary/tests/solr/test_update_work.py"
+   ],
+   "fail_to_pass": [
+    "openlibrary/tests/solr/test_update_work.py::TestAuthorUpdater::test_workless_author",
+    "openlibrary/tests/solr/test_update_work.py::Test_update_keys::test_delete",
+    "openlibrary/tests/solr/test_update_work.py::Test_update_keys::test_redirects",
+    "openlibrary/tests/solr/test_update_work.py::TestWorkSolrUpdater::test_no_title",
+    "openlibrary/tests/solr/test_update_work.py::TestWorkSolrUpdater::test_work_no_title",
+    "openlibrary/tests/solr/test_update_work.py::TestSolrUpdate::test_successful_response",
+    "openlibrary/tests/solr/test_update_work.py::TestSolrUpdate::test_non_json_solr_503",
+    "openlibrary/tests/solr/test_update_work.py::TestSolrUpdate::test_solr_offline",
+    "openlibrary/tests/solr/test_update_work.py::TestSolrUpdate::test_invalid_solr_request",
+    "openlibrary/tests/solr/test_update_work.py::TestSolrUpdate::test_bad_apple_in_solr_request",
+    "openlibrary/tests/solr/test_update_work.py::TestSolrUpdate::test_other_non_ok_status"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [
+    "openlibrary/tests/solr/test_update_work.py::Test_Sort_Editions_Ocaids::test_excludes_fav_ia_collections",
+    "openlibrary/tests/solr/test_update_work.py::Test_Sort_Editions_Ocaids::test_goog_deprioritized",
+    "openlibrary/tests/solr/test_update_work.py::Test_Sort_Editions_Ocaids::test_sort",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_author_info",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_edition_count_when_editions_in_data_provider",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_edition_count_when_editions_on_work",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_edition_key",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_get_alternate_titles",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_ia_boxid",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_identifiers",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_isbns",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_other_identifiers",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_publish_year",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_simple_work",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_subjects",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_with_multiple_editions",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_with_one_inlibrary_edition",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_with_one_lending_edition",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_with_one_printdisabled_edition",
+    "openlibrary/tests/solr/test_update_work.py::Test_build_data::test_with_two_lending_editions",
+    "openlibrary/tests/solr/test_update_work.py::Test_pick_cover_edition::test_no_editions",
+    "openlibrary/tests/solr/test_update_work.py::Test_pick_cover_edition::test_no_work_cover",
+    "openlibrary/tests/solr/test_update_work.py::Test_pick_cover_edition::test_prefers_anything",
+    "openlibrary/tests/solr/test_update_work.py::Test_pick_cover_edition::test_prefers_eng_covers",
+    "openlibrary/tests/solr/test_update_work.py::Test_pick_cover_edition::test_prefers_work_cover",
+    "openlibrary/tests/solr/test_update_work.py::Test_pick_number_of_pages_median::test_invalid_type",
+    "openlibrary/tests/solr/test_update_work.py::Test_pick_number_of_pages_median::test_no_editions",
+    "openlibrary/tests/solr/test_update_work.py::Test_pick_number_of_pages_median::test_normal_case"
+   ],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "05",
+   "instance_id": "instance_internetarchive__openlibrary-f8cc11d9c1575fdba5ac66aee0befca970da8d64-v13642507b4fc1f8d234172bf8129942da2c2ca26",
+   "base_commit": "3677dd20bcdd17aa0fa0f202f4ea50c46936bdc5",
+   "base_date": "2024-01-11",
+   "gold_lines": 146,
+   "run_mode": "selected",
+   "selected_tests": [
+    "scripts/tests/test_import_open_textbook_library.py"
+   ],
+   "fail_to_pass": [
+    "scripts/tests/test_import_open_textbook_library.py::test_map_data[input_data0-expected_output0]",
+    "scripts/tests/test_import_open_textbook_library.py::test_map_data[input_data1-expected_output1]",
+    "scripts/tests/test_import_open_textbook_library.py::test_map_data[input_data2-expected_output2]",
+    "scripts/tests/test_import_open_textbook_library.py::test_map_data[input_data3-expected_output3]"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "06",
+   "instance_id": "instance_internetarchive__openlibrary-6afdb09df692223c3a31df65cfa92f15e5614c01-v08d8e8889ec945ab821fb156c04c7d2e2810debb",
+   "base_commit": "1a3fab3f0b319e0df49dd742ce2ffa0d747d1b44",
+   "base_date": "2024-02-04",
+   "gold_lines": 30,
+   "run_mode": "selected",
+   "selected_tests": [
+    "scripts/solr_builder/tests/test_fn_to_cli.py"
+   ],
+   "fail_to_pass": [
+    "scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_lists",
+    "scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_paths",
+    "scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_run_returns_async_result",
+    "scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_scalar_path",
+    "scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_list_float"
+   ],
+   "pass_to_pass": [
+    "scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_full_flow",
+    "scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_parse_docs",
+    "scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_type_to_argparse",
+    "scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_is_optional"
+   ],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "07",
+   "instance_id": "instance_internetarchive__openlibrary-0d13e6b4bf80bced6c0946b969b9a1b6963f6bce-v76304ecdb3a5954fcf13feb710e8c40fcf24b73c",
+   "base_commit": "fe6c160d3f2afd9fd70bea62195337fad15c6535",
+   "base_date": "2024-05-14",
+   "gold_lines": 75,
+   "run_mode": "selected",
+   "selected_tests": [
+    "openlibrary/catalog/add_book/tests/test_load_book.py"
+   ],
+   "fail_to_pass": [
+    "openlibrary/catalog/add_book/tests/test_load_book.py::TestImportAuthor::test_author_importer_drops_honorifics[Dr.",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::TestImportAuthor::test_author_importer_drops_honorifics[dr.",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::TestImportAuthor::test_author_importer_drops_honorifics[Dr",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::TestImportAuthor::test_author_importer_drops_honorifics[M.",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::TestImportAuthor::test_author_importer_drops_honorifics[Mr",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::TestImportAuthor::test_author_importer_drops_honorifics[Mr.",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::TestImportAuthor::test_author_importer_drops_honorifics[monsieur",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::TestImportAuthor::test_author_importer_drops_honorifics[Anicet-Bourgeois",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::TestImportAuthor::test_author_importer_drops_honorifics[Doctor",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::TestImportAuthor::test_author_importer_drops_honorifics[John"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [
+    "openlibrary/catalog/add_book/tests/test_load_book.py::test_build_query",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::test_import_author_name_natural_order[author0]",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::test_import_author_name_natural_order[author1]",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::test_import_author_name_natural_order[author2]",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::test_import_author_name_natural_order[author3]",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::test_import_author_name_unchanged[author0]",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::test_import_author_name_unchanged[author1]",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::test_import_author_name_unchanged[author2]",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::test_import_author_name_unchanged[author3]",
+    "openlibrary/catalog/add_book/tests/test_load_book.py::test_import_author_name_unchanged[author4]"
+   ],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  }
+ ],
+ "success_rule": "ok = f2p_frac >= 0.9 and p2p_frac >= 0.9 (f2p/p2p pooled over all tasks; p2p = dataset p2p + derived p2p)",
+ "license_note": "This file holds test identifiers and metadata only (instance ids, base commits, docker image, fail-to-pass and pass-to-pass test names) that identify SWE-bench Pro rows for internetarchive/openlibrary. It contains no issue text and no patches. It derives from SWE-bench Pro and the upstream repository; upstream terms apply and this repository's MIT and CC BY 4.0 licences do not cover it. See THIRD_PARTY_NOTICES.md.",
+ "dep_changes": {},
+ "calibration_runs": [
+  {
+   "label": "r1",
+   "seconds": 1060,
+   "cost_usd": 3.303719,
+   "num_turns": 91,
+   "f2p": "45/45",
+   "p2p": "47/47",
+   "tasks_resolved": "7/7",
+   "ok": true,
+   "all_pass": true
+  }
+ ],
+ "published_success_rule": "A chain run counts as passed in the published results only if every fail-to-pass and every pass-to-pass test of every task in the chain passes (all_pass in grade.py). The looser 'success_rule' above is a secondary flag that the published results do not use."
+}

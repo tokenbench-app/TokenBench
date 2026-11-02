@@ -1,0 +1,102 @@
+{
+ "chain_id": "openlibrary_A",
+ "tasks": [
+  {
+   "k": "01",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "02",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "03",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "04",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 28,
+   "gold_flaky": []
+  },
+  {
+   "k": "05",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "06",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 0,
+   "gold_flaky": []
+  },
+  {
+   "k": "07",
+   "gold_f2p_fail": [],
+   "gold_p2p_fail": [],
+   "base_f2p_pass": [],
+   "base_p2p_fail": [],
+   "n_p2p_derived": 10,
+   "gold_flaky": []
+  }
+ ],
+ "gold": {
+  "chain_id": "openlibrary_A",
+  "apply": [
+   "clean"
+  ],
+  "base_tree_match": true,
+  "f2p_pass": 45,
+  "f2p_total": 45,
+  "p2p_pass": 47,
+  "p2p_total": 47,
+  "f2p_frac": 1.0,
+  "p2p_frac": 1.0,
+  "tasks_resolved": 7,
+  "n_tasks": 7,
+  "ok": true,
+  "all_pass": true
+ },
+ "base": {
+  "chain_id": "openlibrary_A",
+  "apply": [
+   "empty"
+  ],
+  "base_tree_match": true,
+  "f2p_pass": 0,
+  "f2p_total": 45,
+  "p2p_pass": 9,
+  "p2p_total": 47,
+  "f2p_frac": 0.0,
+  "p2p_frac": 0.1915,
+  "tasks_resolved": 0,
+  "n_tasks": 7,
+  "ok": false,
+  "all_pass": false
+ }
+}

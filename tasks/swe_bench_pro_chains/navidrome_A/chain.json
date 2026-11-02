@@ -1,0 +1,163 @@
+{
+ "chain_id": "navidrome_A",
+ "repo": "navidrome/navidrome",
+ "language": "go",
+ "source": "ScaleAI/SWE-bench_Pro V2 (HF default config)",
+ "base_instance": "instance_navidrome__navidrome-3977ef6e0f287f598b6e4009876239d6f13b686d",
+ "base_commit": "653b4d97f959df49ddf6ac9c76939d2fbbfc9bf1",
+ "base_tree": "84f26b1ee84471555d9ba816ba62a8e015aae950",
+ "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_navidrome__navidrome-3977ef6e0f287f598b6e4009876239d6f13b686d",
+ "gold_lines": 637,
+ "n_tasks": 7,
+ "tasks": [
+  {
+   "k": "01",
+   "instance_id": "instance_navidrome__navidrome-3977ef6e0f287f598b6e4009876239d6f13b686d",
+   "base_commit": "653b4d97f959df49ddf6ac9c76939d2fbbfc9bf1",
+   "base_date": "2024-05-18",
+   "gold_lines": 82,
+   "run_mode": "all",
+   "selected_tests": [
+    "TestHasher"
+   ],
+   "fail_to_pass": [
+    "TestHasher"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "02",
+   "instance_id": "instance_navidrome__navidrome-55bff343cdaad1f04496f724eda4b55d422d7f17",
+   "base_commit": "68f03d01672a868f86e0fd73dde3957df8bf0dab",
+   "base_date": "2024-05-21",
+   "gold_lines": 181,
+   "run_mode": "all",
+   "selected_tests": [
+    "TestPersistence"
+   ],
+   "fail_to_pass": [
+    "TestPersistence"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "03",
+   "instance_id": "instance_navidrome__navidrome-0488fb92cb02a82924fb1181bf1642f2e87096db",
+   "base_commit": "61903facdf5d56277bf57c7aa83bce7fb35b597a",
+   "base_date": "2024-05-22",
+   "gold_lines": 67,
+   "run_mode": "all",
+   "selected_tests": [
+    "TestArtwork",
+    "TestSubsonicApi"
+   ],
+   "fail_to_pass": [
+    "TestArtwork",
+    "TestSubsonicApi"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "04",
+   "instance_id": "instance_navidrome__navidrome-56303cde23a4122d2447cbb266f942601a78d7e4",
+   "base_commit": "e434ca937255be6e12f11300648b3486de0aa9c2",
+   "base_date": "2024-06-08",
+   "gold_lines": 46,
+   "run_mode": "all",
+   "selected_tests": [
+    "TestMetadata"
+   ],
+   "fail_to_pass": [
+    "TestMetadata"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "05",
+   "instance_id": "instance_navidrome__navidrome-29bc17acd71596ae92131aca728716baf5af9906",
+   "base_commit": "4044642abf5a7147c3ed3076c045e0e3b2520171",
+   "base_date": "2024-06-16",
+   "gold_lines": 89,
+   "run_mode": "all",
+   "selected_tests": [
+    "TestCache"
+   ],
+   "fail_to_pass": [
+    "TestCache"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "06",
+   "instance_id": "instance_navidrome__navidrome-fa85e2a7816a6fe3829a4c0d8e893e982b0985da",
+   "base_commit": "5360283bb0368c5226b301f99b7095a54407b053",
+   "base_date": "2024-07-31",
+   "gold_lines": 109,
+   "run_mode": "all",
+   "selected_tests": [
+    "TestCore",
+    "TestPersistence"
+   ],
+   "fail_to_pass": [
+    "TestCore",
+    "TestPersistence"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  },
+  {
+   "k": "07",
+   "instance_id": "instance_navidrome__navidrome-0a650de357babdcc8ce910fe37fee84acf4ed2fe",
+   "base_commit": "9c3b4561652a15846993d477003e111f0df0c585",
+   "base_date": "2024-10-22",
+   "gold_lines": 63,
+   "run_mode": "all",
+   "selected_tests": [
+    "TestSubsonicApiResponses"
+   ],
+   "fail_to_pass": [
+    "TestSubsonicApiResponses"
+   ],
+   "pass_to_pass": [],
+   "p2p_derived": [],
+   "apply": {
+    "gold": "clean",
+    "test": "clean"
+   }
+  }
+ ],
+ "success_rule": "ok = f2p_frac >= 0.9 and p2p_frac >= 0.9 (f2p/p2p pooled over all tasks; p2p = dataset p2p + derived p2p)",
+ "license_note": "This file holds test identifiers and metadata only (instance ids, base commits, docker image, fail-to-pass and pass-to-pass test names) that identify SWE-bench Pro rows for navidrome/navidrome. It contains no issue text and no patches. It derives from SWE-bench Pro and the upstream repository; upstream terms apply and this repository's MIT and CC BY 4.0 licences do not cover it. See THIRD_PARTY_NOTICES.md.",
+ "dep_changes": {},
+ "calibration_runs": [],
+ "published_success_rule": "A chain run counts as passed in the published results only if every fail-to-pass and every pass-to-pass test of every task in the chain passes (all_pass in grade.py). The looser 'success_rule' above is a secondary flag that the published results do not use."
+}

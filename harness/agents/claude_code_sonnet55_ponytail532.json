@@ -1,0 +1,32 @@
+{
+  "agent_id": "claude_code_sonnet55_ponytail532",
+  "display_name": "Sonnet 5.5 + ponytail plugin 5.3.2 (release tag v5.3.2, 16352ac), isolated",
+  "kind": "cli_agent",
+  "provider": "claude",
+  "model": "claude-sonnet-5-5",
+  "model_resolution": "configured",
+  "command_template": [
+    "claude",
+    "--print",
+    "--output-format",
+    "json",
+    "--dangerously-skip-permissions",
+    "--disallowedTools",
+    "WebSearch",
+    "WebFetch",
+    "--model",
+    "claude-sonnet-5-5",
+    "--effort",
+    "high",
+    "--setting-sources",
+    "project,local",
+    "--disable-slash-commands",
+    "--plugin-dir",
+    "<PLUGIN_CACHE>/ponytail/ponytail/5.3.2"
+  ],
+  "supports_stdin_prompt": true,
+  "supports_workspace_cwd": true,
+  "final_submission_mode": "process_exit",
+  "default_timeout_seconds": 900,
+  "env": {}
+}
