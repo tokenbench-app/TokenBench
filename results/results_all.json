@@ -35,27 +35,6 @@
     }
    },
    {
-    "condition": "__baseline__",
-    "is_baseline": true,
-    "cost_total": null,
-    "cost_per_task": null,
-    "tokens_total": null,
-    "tasks": 71,
-    "runs": 142,
-    "comparability": "reference_baseline",
-    "wall_per_run_s": null,
-    "total_wall_h": null,
-    "successes": 124,
-    "graded_runs": 142,
-    "needs_cleanup": 2,
-    "savings_pct": 0.0,
-    "set_savings": {
-     "short": 0.0,
-     "pro": 0.0,
-     "custom": 0.0
-    }
-   },
-   {
     "condition": "sonnet_graphify",
     "is_baseline": false,
     "cost_total": null,
@@ -76,6 +55,27 @@
      "short": 0.7,
      "pro": 11.4,
      "custom": -10.9
+    }
+   },
+   {
+    "condition": "__baseline__",
+    "is_baseline": true,
+    "cost_total": null,
+    "cost_per_task": null,
+    "tokens_total": null,
+    "tasks": 71,
+    "runs": 142,
+    "comparability": "reference_baseline",
+    "wall_per_run_s": null,
+    "total_wall_h": null,
+    "successes": 124,
+    "graded_runs": 142,
+    "needs_cleanup": 2,
+    "savings_pct": 0.0,
+    "set_savings": {
+     "short": 0.0,
+     "pro": 0.0,
+     "custom": 0.0
     }
    },
    {
